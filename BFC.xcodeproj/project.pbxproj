@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074B6E671C95A7EC007E365C /* BFCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */; };
+		07648C131C93FFFF0032009F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C121C93FFFF0032009F /* AppDelegate.swift */; };
+		07648C181C93FFFF0032009F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07648C161C93FFFF0032009F /* Main.storyboard */; };
+		07648C1B1C93FFFF0032009F /* BFC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07648C191C93FFFF0032009F /* BFC.xcdatamodeld */; };
+		07648C1D1C93FFFF0032009F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07648C1C1C93FFFF0032009F /* Assets.xcassets */; };
+		07648C201C93FFFF0032009F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07648C1E1C93FFFF0032009F /* LaunchScreen.storyboard */; };
+		07648C2B1C9400000032009F /* BFCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C2A1C9400000032009F /* BFCTests.swift */; };
+		07648C361C9400000032009F /* BFCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C351C9400000032009F /* BFCUITests.swift */; };
+		07648C641C9400E00032009F /* BFCBodyPartsExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C621C9400E00032009F /* BFCBodyPartsExercisesViewController.swift */; };
+		07648C651C9400E00032009F /* BFCBodyPartsExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C631C9400E00032009F /* BFCBodyPartsExercisesViewController.xib */; };
+		07648C681C94010A0032009F /* BFCCouplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C661C94010A0032009F /* BFCCouplesViewController.swift */; };
+		07648C691C94010A0032009F /* BFCCouplesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C671C94010A0032009F /* BFCCouplesViewController.xib */; };
+		07648C6C1C9401400032009F /* BFCDayPlanExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C6A1C9401400032009F /* BFCDayPlanExercisesViewController.swift */; };
+		07648C6D1C9401400032009F /* BFCDayPlanExercisesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C6B1C9401400032009F /* BFCDayPlanExercisesViewController.xib */; };
+		07648C701C9401580032009F /* BFCExerciseDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C6E1C9401580032009F /* BFCExerciseDescriptionViewController.swift */; };
+		07648C711C9401580032009F /* BFCExerciseDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C6F1C9401580032009F /* BFCExerciseDescriptionViewController.xib */; };
+		07648C741C9401700032009F /* BFCExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C721C9401700032009F /* BFCExerciseDetailViewController.swift */; };
+		07648C751C9401700032009F /* BFCExerciseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C731C9401700032009F /* BFCExerciseDetailViewController.xib */; };
+		07648C781C9401840032009F /* BFCExerciseWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C761C9401840032009F /* BFCExerciseWorkoutViewController.swift */; };
+		07648C791C9401840032009F /* BFCExerciseWorkoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C771C9401840032009F /* BFCExerciseWorkoutViewController.xib */; };
+		07648C7C1C94019F0032009F /* BFCSidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C7A1C94019F0032009F /* BFCSidePanelViewController.swift */; };
+		07648C7D1C94019F0032009F /* BFCSidePanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C7B1C94019F0032009F /* BFCSidePanelViewController.xib */; };
+		07648C801C9401B30032009F /* BFCWorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C7E1C9401B30032009F /* BFCWorkoutDetailViewController.swift */; };
+		07648C811C9401B30032009F /* BFCWorkoutDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C7F1C9401B30032009F /* BFCWorkoutDetailViewController.xib */; };
+		07648C841C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C821C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift */; };
+		07648C851C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C831C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib */; };
+		07648C881C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C861C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift */; };
+		07648C891C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C871C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib */; };
+		07648C8C1C9402030032009F /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C8B1C9402030032009F /* MenuData.swift */; };
+		07648C8F1C9404620032009F /* BFCContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C8E1C9404620032009F /* BFCContainerViewController.swift */; };
+		077E0B9E1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E0B9C1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift */; };
+		077E0B9F1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077E0B9D1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib */; };
+		077E0BA21C95C042004B181C /* BFCWorkoutDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E0BA01C95C042004B181C /* BFCWorkoutDetailTableViewCell.swift */; };
+		077E0BA31C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077E0BA11C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib */; };
+		07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */; };
+		07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */; };
+		07FE0B191C957CED00A0FA84 /* BFCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE0B181C957CED00A0FA84 /* BFCImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07648C271C93FFFF0032009F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07648C071C93FFFF0032009F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07648C0E1C93FFFF0032009F;
+			remoteInfo = BFC;
+		};
+		07648C321C9400000032009F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07648C071C93FFFF0032009F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07648C0E1C93FFFF0032009F;
+			remoteInfo = BFC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCBaseViewController.swift; sourceTree = "<group>"; };
+		07648C0F1C93FFFF0032009F /* BFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07648C121C93FFFF0032009F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07648C171C93FFFF0032009F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07648C1A1C93FFFF0032009F /* BFC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BFC.xcdatamodel; sourceTree = "<group>"; };
+		07648C1C1C93FFFF0032009F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07648C1F1C93FFFF0032009F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07648C211C93FFFF0032009F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07648C261C93FFFF0032009F /* BFCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07648C2A1C9400000032009F /* BFCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFCTests.swift; sourceTree = "<group>"; };
+		07648C2C1C9400000032009F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07648C311C9400000032009F /* BFCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07648C351C9400000032009F /* BFCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFCUITests.swift; sourceTree = "<group>"; };
+		07648C371C9400000032009F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07648C621C9400E00032009F /* BFCBodyPartsExercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCBodyPartsExercisesViewController.swift; sourceTree = "<group>"; };
+		07648C631C9400E00032009F /* BFCBodyPartsExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCBodyPartsExercisesViewController.xib; sourceTree = "<group>"; };
+		07648C661C94010A0032009F /* BFCCouplesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCCouplesViewController.swift; sourceTree = "<group>"; };
+		07648C671C94010A0032009F /* BFCCouplesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCCouplesViewController.xib; sourceTree = "<group>"; };
+		07648C6A1C9401400032009F /* BFCDayPlanExercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCDayPlanExercisesViewController.swift; sourceTree = "<group>"; };
+		07648C6B1C9401400032009F /* BFCDayPlanExercisesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCDayPlanExercisesViewController.xib; sourceTree = "<group>"; };
+		07648C6E1C9401580032009F /* BFCExerciseDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCExerciseDescriptionViewController.swift; sourceTree = "<group>"; };
+		07648C6F1C9401580032009F /* BFCExerciseDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCExerciseDescriptionViewController.xib; sourceTree = "<group>"; };
+		07648C721C9401700032009F /* BFCExerciseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		07648C731C9401700032009F /* BFCExerciseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCExerciseDetailViewController.xib; sourceTree = "<group>"; };
+		07648C761C9401840032009F /* BFCExerciseWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCExerciseWorkoutViewController.swift; sourceTree = "<group>"; };
+		07648C771C9401840032009F /* BFCExerciseWorkoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCExerciseWorkoutViewController.xib; sourceTree = "<group>"; };
+		07648C7A1C94019F0032009F /* BFCSidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCSidePanelViewController.swift; sourceTree = "<group>"; };
+		07648C7B1C94019F0032009F /* BFCSidePanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCSidePanelViewController.xib; sourceTree = "<group>"; };
+		07648C7E1C9401B30032009F /* BFCWorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutDetailViewController.swift; sourceTree = "<group>"; };
+		07648C7F1C9401B30032009F /* BFCWorkoutDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailViewController.xib; sourceTree = "<group>"; };
+		07648C821C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutExercisesDescriptionViewController.swift; sourceTree = "<group>"; };
+		07648C831C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutExercisesDescriptionViewController.xib; sourceTree = "<group>"; };
+		07648C861C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutWeeklyScheduleViewController.swift; sourceTree = "<group>"; };
+		07648C871C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutWeeklyScheduleViewController.xib; sourceTree = "<group>"; };
+		07648C8B1C9402030032009F /* MenuData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
+		07648C8E1C9404620032009F /* BFCContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCContainerViewController.swift; sourceTree = "<group>"; };
+		077E0B9C1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCExerciseDetailTableViewCell.swift; sourceTree = "<group>"; };
+		077E0B9D1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCExerciseDetailTableViewCell.xib; sourceTree = "<group>"; };
+		077E0BA01C95C042004B181C /* BFCWorkoutDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutDetailTableViewCell.swift; sourceTree = "<group>"; };
+		077E0BA11C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailTableViewCell.xib; sourceTree = "<group>"; };
+		07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCSidePanelTableViewCell.swift; sourceTree = "<group>"; };
+		07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCSidePanelTableViewCell.xib; sourceTree = "<group>"; };
+		07FE0B181C957CED00A0FA84 /* BFCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07648C0C1C93FFFF0032009F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07648C231C93FFFF0032009F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07648C2E1C9400000032009F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074B6E651C95A7C8007E365C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		07648C061C93FFFF0032009F = {
+			isa = PBXGroup;
+			children = (
+				074B6E651C95A7C8007E365C /* New Group */,
+				07CA307B1C940D4000D7A423 /* CellXibs */,
+				07648C8D1C94043C0032009F /* Components */,
+				07648C8A1C9401E70032009F /* Model */,
+				07648C431C94002C0032009F /* Views */,
+				07648C111C93FFFF0032009F /* BFC */,
+				07648C291C9400000032009F /* BFCTests */,
+				07648C341C9400000032009F /* BFCUITests */,
+				07648C101C93FFFF0032009F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07648C101C93FFFF0032009F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07648C0F1C93FFFF0032009F /* BFC.app */,
+				07648C261C93FFFF0032009F /* BFCTests.xctest */,
+				07648C311C9400000032009F /* BFCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07648C111C93FFFF0032009F /* BFC */ = {
+			isa = PBXGroup;
+			children = (
+				07648C121C93FFFF0032009F /* AppDelegate.swift */,
+				07648C161C93FFFF0032009F /* Main.storyboard */,
+				07648C1C1C93FFFF0032009F /* Assets.xcassets */,
+				07648C1E1C93FFFF0032009F /* LaunchScreen.storyboard */,
+				07648C211C93FFFF0032009F /* Info.plist */,
+				07648C191C93FFFF0032009F /* BFC.xcdatamodeld */,
+			);
+			path = BFC;
+			sourceTree = "<group>";
+		};
+		07648C291C9400000032009F /* BFCTests */ = {
+			isa = PBXGroup;
+			children = (
+				07648C2A1C9400000032009F /* BFCTests.swift */,
+				07648C2C1C9400000032009F /* Info.plist */,
+			);
+			path = BFCTests;
+			sourceTree = "<group>";
+		};
+		07648C341C9400000032009F /* BFCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07648C351C9400000032009F /* BFCUITests.swift */,
+				07648C371C9400000032009F /* Info.plist */,
+			);
+			path = BFCUITests;
+			sourceTree = "<group>";
+		};
+		07648C431C94002C0032009F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07648C661C94010A0032009F /* BFCCouplesViewController.swift */,
+				07648C671C94010A0032009F /* BFCCouplesViewController.xib */,
+				07648C7A1C94019F0032009F /* BFCSidePanelViewController.swift */,
+				07648C7B1C94019F0032009F /* BFCSidePanelViewController.xib */,
+				07648C761C9401840032009F /* BFCExerciseWorkoutViewController.swift */,
+				07648C771C9401840032009F /* BFCExerciseWorkoutViewController.xib */,
+				07648C6E1C9401580032009F /* BFCExerciseDescriptionViewController.swift */,
+				07648C6F1C9401580032009F /* BFCExerciseDescriptionViewController.xib */,
+				07648C7E1C9401B30032009F /* BFCWorkoutDetailViewController.swift */,
+				07648C7F1C9401B30032009F /* BFCWorkoutDetailViewController.xib */,
+				07648C621C9400E00032009F /* BFCBodyPartsExercisesViewController.swift */,
+				07648C631C9400E00032009F /* BFCBodyPartsExercisesViewController.xib */,
+				07648C861C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift */,
+				07648C871C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib */,
+				07648C6A1C9401400032009F /* BFCDayPlanExercisesViewController.swift */,
+				07648C6B1C9401400032009F /* BFCDayPlanExercisesViewController.xib */,
+				07648C721C9401700032009F /* BFCExerciseDetailViewController.swift */,
+				07648C731C9401700032009F /* BFCExerciseDetailViewController.xib */,
+				07648C821C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift */,
+				07648C831C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		07648C8A1C9401E70032009F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				07648C8B1C9402030032009F /* MenuData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		07648C8D1C94043C0032009F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */,
+				07648C8E1C9404620032009F /* BFCContainerViewController.swift */,
+				07FE0B181C957CED00A0FA84 /* BFCImage.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		07CA307B1C940D4000D7A423 /* CellXibs */ = {
+			isa = PBXGroup;
+			children = (
+				07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */,
+				07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */,
+				077E0B9C1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift */,
+				077E0B9D1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib */,
+				077E0BA01C95C042004B181C /* BFCWorkoutDetailTableViewCell.swift */,
+				077E0BA11C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib */,
+			);
+			name = CellXibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07648C0E1C93FFFF0032009F /* BFC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07648C3A1C9400000032009F /* Build configuration list for PBXNativeTarget "BFC" */;
+			buildPhases = (
+				07648C0B1C93FFFF0032009F /* Sources */,
+				07648C0C1C93FFFF0032009F /* Frameworks */,
+				07648C0D1C93FFFF0032009F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BFC;
+			productName = BFC;
+			productReference = 07648C0F1C93FFFF0032009F /* BFC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07648C251C93FFFF0032009F /* BFCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07648C3D1C9400000032009F /* Build configuration list for PBXNativeTarget "BFCTests" */;
+			buildPhases = (
+				07648C221C93FFFF0032009F /* Sources */,
+				07648C231C93FFFF0032009F /* Frameworks */,
+				07648C241C93FFFF0032009F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07648C281C93FFFF0032009F /* PBXTargetDependency */,
+			);
+			name = BFCTests;
+			productName = BFCTests;
+			productReference = 07648C261C93FFFF0032009F /* BFCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07648C301C9400000032009F /* BFCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07648C401C9400000032009F /* Build configuration list for PBXNativeTarget "BFCUITests" */;
+			buildPhases = (
+				07648C2D1C9400000032009F /* Sources */,
+				07648C2E1C9400000032009F /* Frameworks */,
+				07648C2F1C9400000032009F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07648C331C9400000032009F /* PBXTargetDependency */,
+			);
+			name = BFCUITests;
+			productName = BFCUITests;
+			productReference = 07648C311C9400000032009F /* BFCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07648C071C93FFFF0032009F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Aman;
+				TargetAttributes = {
+					07648C0E1C93FFFF0032009F = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					07648C251C93FFFF0032009F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 07648C0E1C93FFFF0032009F;
+					};
+					07648C301C9400000032009F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 07648C0E1C93FFFF0032009F;
+					};
+				};
+			};
+			buildConfigurationList = 07648C0A1C93FFFF0032009F /* Build configuration list for PBXProject "BFC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07648C061C93FFFF0032009F;
+			productRefGroup = 07648C101C93FFFF0032009F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07648C0E1C93FFFF0032009F /* BFC */,
+				07648C251C93FFFF0032009F /* BFCTests */,
+				07648C301C9400000032009F /* BFCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07648C0D1C93FFFF0032009F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07648C201C93FFFF0032009F /* LaunchScreen.storyboard in Resources */,
+				07648C751C9401700032009F /* BFCExerciseDetailViewController.xib in Resources */,
+				07648C811C9401B30032009F /* BFCWorkoutDetailViewController.xib in Resources */,
+				07648C791C9401840032009F /* BFCExerciseWorkoutViewController.xib in Resources */,
+				07648C891C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib in Resources */,
+				077E0B9F1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib in Resources */,
+				07648C651C9400E00032009F /* BFCBodyPartsExercisesViewController.xib in Resources */,
+				07648C6D1C9401400032009F /* BFCDayPlanExercisesViewController.xib in Resources */,
+				07648C711C9401580032009F /* BFCExerciseDescriptionViewController.xib in Resources */,
+				07648C1D1C93FFFF0032009F /* Assets.xcassets in Resources */,
+				077E0BA31C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib in Resources */,
+				07648C691C94010A0032009F /* BFCCouplesViewController.xib in Resources */,
+				07648C851C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib in Resources */,
+				07648C7D1C94019F0032009F /* BFCSidePanelViewController.xib in Resources */,
+				07648C181C93FFFF0032009F /* Main.storyboard in Resources */,
+				07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07648C241C93FFFF0032009F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07648C2F1C9400000032009F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07648C0B1C93FFFF0032009F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074B6E671C95A7EC007E365C /* BFCBaseViewController.swift in Sources */,
+				07648C801C9401B30032009F /* BFCWorkoutDetailViewController.swift in Sources */,
+				07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */,
+				07648C841C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */,
+				07648C681C94010A0032009F /* BFCCouplesViewController.swift in Sources */,
+				07648C701C9401580032009F /* BFCExerciseDescriptionViewController.swift in Sources */,
+				07648C1B1C93FFFF0032009F /* BFC.xcdatamodeld in Sources */,
+				07648C641C9400E00032009F /* BFCBodyPartsExercisesViewController.swift in Sources */,
+				07FE0B191C957CED00A0FA84 /* BFCImage.swift in Sources */,
+				07648C741C9401700032009F /* BFCExerciseDetailViewController.swift in Sources */,
+				07648C881C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */,
+				07648C8F1C9404620032009F /* BFCContainerViewController.swift in Sources */,
+				07648C6C1C9401400032009F /* BFCDayPlanExercisesViewController.swift in Sources */,
+				07648C131C93FFFF0032009F /* AppDelegate.swift in Sources */,
+				077E0BA21C95C042004B181C /* BFCWorkoutDetailTableViewCell.swift in Sources */,
+				07648C7C1C94019F0032009F /* BFCSidePanelViewController.swift in Sources */,
+				07648C8C1C9402030032009F /* MenuData.swift in Sources */,
+				077E0B9E1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift in Sources */,
+				07648C781C9401840032009F /* BFCExerciseWorkoutViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07648C221C93FFFF0032009F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07648C2B1C9400000032009F /* BFCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07648C2D1C9400000032009F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07648C361C9400000032009F /* BFCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07648C281C93FFFF0032009F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07648C0E1C93FFFF0032009F /* BFC */;
+			targetProxy = 07648C271C93FFFF0032009F /* PBXContainerItemProxy */;
+		};
+		07648C331C9400000032009F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07648C0E1C93FFFF0032009F /* BFC */;
+			targetProxy = 07648C321C9400000032009F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07648C161C93FFFF0032009F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07648C171C93FFFF0032009F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07648C1E1C93FFFF0032009F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07648C1F1C93FFFF0032009F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07648C381C9400000032009F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07648C391C9400000032009F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07648C3B1C9400000032009F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BFC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aman-PC.BFC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07648C3C1C9400000032009F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BFC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aman-PC.BFC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07648C3E1C9400000032009F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BFCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aman-PC.BFCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BFC.app/BFC";
+			};
+			name = Debug;
+		};
+		07648C3F1C9400000032009F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BFCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aman-PC.BFCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BFC.app/BFC";
+			};
+			name = Release;
+		};
+		07648C411C9400000032009F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BFCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aman-PC.BFCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BFC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		07648C421C9400000032009F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BFCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Aman-PC.BFCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BFC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07648C0A1C93FFFF0032009F /* Build configuration list for PBXProject "BFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07648C381C9400000032009F /* Debug */,
+				07648C391C9400000032009F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07648C3A1C9400000032009F /* Build configuration list for PBXNativeTarget "BFC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07648C3B1C9400000032009F /* Debug */,
+				07648C3C1C9400000032009F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07648C3D1C9400000032009F /* Build configuration list for PBXNativeTarget "BFCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07648C3E1C9400000032009F /* Debug */,
+				07648C3F1C9400000032009F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07648C401C9400000032009F /* Build configuration list for PBXNativeTarget "BFCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07648C411C9400000032009F /* Debug */,
+				07648C421C9400000032009F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07648C191C93FFFF0032009F /* BFC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07648C1A1C93FFFF0032009F /* BFC.xcdatamodel */,
+			);
+			currentVersion = 07648C1A1C93FFFF0032009F /* BFC.xcdatamodel */;
+			path = BFC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 07648C071C93FFFF0032009F /* Project object */;
+}

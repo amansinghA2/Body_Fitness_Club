@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uVt-gs-OK9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Couples View Controller-->
+        <scene sceneID="J1m-e2-Tde">
+            <objects>
+                <viewController id="uVt-gs-OK9" customClass="BFCCouplesViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pLF-2w-pcK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="zaH-oy-CJW" kind="show" identifier="ExerciseWorkoutIdentifier" id="n6u-aQ-8nv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUG-Qi-ZpI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="287"/>
+        </scene>
+        <!--Exercise Workout View Controller-->
+        <scene sceneID="tgZ-Oo-VOh">
+            <objects>
+                <viewController storyboardIdentifier="CenterViewController" id="Xv2-57-cmA" customClass="BFCExerciseWorkoutViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ocM-hI-YHw">
+                        <barButtonItem key="leftBarButtonItem" image="1454501465Hamburger" style="plain" id="6d5-HG-ZcV">
+                            <color key="tintColor" red="0.85913936339999997" green="0.9846875007" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="menuButton:" destination="Xv2-57-cmA" id="YAD-Bv-JFp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="RrJ-pt-upg" kind="push" identifier="ExerciseDetailIdentifier" id="ZXl-CJ-y3v"/>
+                        <segue destination="47L-ZB-nxg" kind="push" identifier="WorkoutDetailIdentifier" id="BdO-OY-ES7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qV0-2L-DOc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="263"/>
+        </scene>
+        <!--Workout Exercises Description View Controller-->
+        <scene sceneID="g73-Yn-rYO">
+            <objects>
+                <viewController id="eeN-n9-BHo" customClass="BFCWorkoutExercisesDescriptionViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4Nu-j9-Y9b"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBR-jl-ORy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2643" y="787"/>
+        </scene>
+        <!--Workout Weekly Schedule View Controller-->
+        <scene sceneID="RIE-vi-Rlm">
+            <objects>
+                <viewController id="tlD-JJ-cuv" customClass="BFCWorkoutWeeklyScheduleViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kdY-5E-Qdn"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="0gt-gh-AQc" kind="push" identifier="DayPlanExercisesIdentifier" id="0rv-J6-6rh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWJ-zO-pqQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="787"/>
+        </scene>
+        <!--Exercise Detail View Controller-->
+        <scene sceneID="8DK-Tn-Rjp">
+            <objects>
+                <viewController id="RrJ-pt-upg" customClass="BFCExerciseDetailViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xeR-SL-aSJ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="icz-mN-yku" kind="push" identifier="BodypartExercisesIdentifier" id="NqS-QS-qbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0T-MN-1Pl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1499" y="38"/>
+        </scene>
+        <!--Workout Detail View Controller-->
+        <scene sceneID="OMt-de-fUc">
+            <objects>
+                <viewController id="47L-ZB-nxg" customClass="BFCWorkoutDetailViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bkO-O6-E5S"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="tlD-JJ-cuv" kind="push" identifier="WorkoutWeeklyScheduleIdentifier" id="cbU-rp-L5C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SB5-Mi-k7p" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1499" y="787"/>
+        </scene>
+        <!--Day Plan Exercises View Controller-->
+        <scene sceneID="7eG-8N-8VA">
+            <objects>
+                <viewController id="0gt-gh-AQc" customClass="BFCDayPlanExercisesViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RLo-6x-OMM"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="eeN-n9-BHo" kind="push" identifier="WorkoutExcDescIdentifier" id="d8T-8T-oKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nMg-HM-mfy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2257" y="787"/>
+        </scene>
+        <!--Body Parts Exercises View Controller-->
+        <scene sceneID="RBX-qm-4LZ">
+            <objects>
+                <viewController id="icz-mN-yku" customClass="BFCBodyPartsExercisesViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Koy-a2-mCv"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="pPU-ke-URZ" kind="push" identifier="ExerciseDescriptionIdentifier" id="8aQ-Cb-QOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9T-oK-EyJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="38"/>
+        </scene>
+        <!--Exercise Description View Controller-->
+        <scene sceneID="dI0-vc-yYs">
+            <objects>
+                <viewController id="pPU-ke-URZ" customClass="BFCExerciseDescriptionViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="VQS-Pp-qhg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbv-5S-v3q" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2257" y="44"/>
+        </scene>
+        <!--Side Panel View Controller-->
+        <scene sceneID="opE-Nf-Eoy">
+            <objects>
+                <viewController storyboardIdentifier="LeftViewController" id="egn-5S-zed" customClass="BFCSidePanelViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="F1C-QY-Tqz"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Sa-Yb-6PO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179" y="951"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GqE-9j-qXy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zaH-oy-CJW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6rr-zj-wcr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xv2-57-cmA" kind="relationship" relationship="rootViewController" id="XL8-0t-Njl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agM-Gd-Ukl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="263"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1454501465Hamburger" width="88" height="88"/>
+    </resources>
+</document>

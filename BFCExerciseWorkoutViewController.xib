@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BFCExerciseWorkoutViewController" customModule="BFC" customModuleProvider="target">
+            <connections>
+                <outlet property="cardioImage" destination="Tmo-GJ-aRy" id="njv-SR-f8n"/>
+                <outlet property="segmentControl" destination="SFS-jC-ZRR" id="vMj-sb-lrT"/>
+                <outlet property="strechingImage" destination="bjI-nh-tx4" id="j5h-c0-jQk"/>
+                <outlet property="strengthImage" destination="9FC-cY-a7G" id="UbE-Lz-boN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yogaImage" destination="3TO-aD-fBD" id="1m0-R9-LYj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SFS-jC-ZRR">
+                    <rect key="frame" x="0.0" y="64" width="320" height="51"/>
+                    <color key="backgroundColor" red="0.6715276121447995" green="0.90139909178702848" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="G57-ls-BBm"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Exercises"/>
+                        <segment title="Workout"/>
+                    </segments>
+                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XQ-8I-AFt">
+                    <rect key="frame" x="0.0" y="181" width="320" height="320"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tmo-GJ-aRy" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="160" width="160" height="160"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="du0-Cq-Rv1"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3TO-aD-fBD" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
+                            <rect key="frame" x="160" y="0.0" width="160" height="160"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="P0c-vM-gdE"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bjI-nh-tx4" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
+                            <rect key="frame" x="160" y="160" width="160" height="160"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="r0z-cn-Twk"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9FC-cY-a7G" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="WEx-t0-JF6"/>
+                                <constraint firstAttribute="width" constant="160" id="n1V-c1-3DN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Tmo-GJ-aRy" firstAttribute="top" secondItem="9FC-cY-a7G" secondAttribute="bottom" id="6Ww-oi-itx"/>
+                        <constraint firstItem="3TO-aD-fBD" firstAttribute="top" secondItem="7XQ-8I-AFt" secondAttribute="top" id="9BR-3d-QoQ"/>
+                        <constraint firstItem="bjI-nh-tx4" firstAttribute="leading" secondItem="Tmo-GJ-aRy" secondAttribute="trailing" id="9MF-wU-vep"/>
+                        <constraint firstItem="Tmo-GJ-aRy" firstAttribute="leading" secondItem="7XQ-8I-AFt" secondAttribute="leading" id="DwY-5p-5zR"/>
+                        <constraint firstItem="bjI-nh-tx4" firstAttribute="top" secondItem="3TO-aD-fBD" secondAttribute="bottom" id="Ehk-Og-s2r"/>
+                        <constraint firstAttribute="bottom" secondItem="Tmo-GJ-aRy" secondAttribute="bottom" id="HHq-Ug-Q6c"/>
+                        <constraint firstItem="3TO-aD-fBD" firstAttribute="leading" secondItem="9FC-cY-a7G" secondAttribute="trailing" id="IAx-Aj-Ljo"/>
+                        <constraint firstItem="9FC-cY-a7G" firstAttribute="top" secondItem="7XQ-8I-AFt" secondAttribute="top" id="OxM-vy-dvg"/>
+                        <constraint firstAttribute="trailing" secondItem="bjI-nh-tx4" secondAttribute="trailing" id="SU1-EV-eBa"/>
+                        <constraint firstItem="Tmo-GJ-aRy" firstAttribute="top" secondItem="bjI-nh-tx4" secondAttribute="top" id="Uog-VT-GM8"/>
+                        <constraint firstItem="Tmo-GJ-aRy" firstAttribute="trailing" secondItem="9FC-cY-a7G" secondAttribute="trailing" id="k2Y-g1-2gr"/>
+                        <constraint firstAttribute="bottom" secondItem="bjI-nh-tx4" secondAttribute="bottom" id="lq2-PC-3qI"/>
+                        <constraint firstAttribute="trailing" secondItem="3TO-aD-fBD" secondAttribute="trailing" id="uiD-N7-p0d"/>
+                        <constraint firstItem="9FC-cY-a7G" firstAttribute="leading" secondItem="7XQ-8I-AFt" secondAttribute="leading" id="wSB-Yt-9ZX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SFS-jC-ZRR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3kN-AL-1uO"/>
+                <constraint firstAttribute="trailing" secondItem="7XQ-8I-AFt" secondAttribute="trailing" id="RPW-km-Cqn"/>
+                <constraint firstItem="SFS-jC-ZRR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="V7k-kS-ku8"/>
+                <constraint firstAttribute="trailing" secondItem="7XQ-8I-AFt" secondAttribute="trailing" id="czt-cA-z1i"/>
+                <constraint firstAttribute="bottom" secondItem="7XQ-8I-AFt" secondAttribute="bottom" constant="67" id="ky6-nb-oHR"/>
+                <constraint firstItem="7XQ-8I-AFt" firstAttribute="top" secondItem="SFS-jC-ZRR" secondAttribute="bottom" constant="67" id="nFT-eu-SY7"/>
+                <constraint firstAttribute="bottom" secondItem="7XQ-8I-AFt" secondAttribute="bottom" constant="67" id="pwI-Zt-4y4"/>
+                <constraint firstItem="7XQ-8I-AFt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qkn-KD-FCX"/>
+                <constraint firstItem="7XQ-8I-AFt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xN5-tC-0BP"/>
+                <constraint firstAttribute="trailing" secondItem="SFS-jC-ZRR" secondAttribute="trailing" id="y0l-sw-eCv"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="412" y="262"/>
+        </view>
+    </objects>
+</document>
