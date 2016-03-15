@@ -10,15 +10,15 @@ import UIKit
 
 
 protocol BFCExerciseWorkoutViewControllerDelegate {
-     func toggleLeftPanel()
+    func toggleLeftPanel()
     
 }
 class BFCExerciseWorkoutViewController: BFCBaseViewController {
     //var isLoaded = false
-     var delegate:BFCExerciseWorkoutViewControllerDelegate?
+    var delegate:BFCExerciseWorkoutViewControllerDelegate?
     
     @IBAction func menuButton(sender: AnyObject) {
-         delegate?.toggleLeftPanel()
+        delegate?.toggleLeftPanel()
     }
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
@@ -32,12 +32,12 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController {
         segmentImageLoad()
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func segmentImageLoad(){
         switch self.segmentControl.selectedSegmentIndex {
         case 0:
@@ -55,14 +55,14 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController {
         }
     }
     
-        /*
+    /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

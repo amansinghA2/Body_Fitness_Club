@@ -37,21 +37,12 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tmo-GJ-aRy" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="160" width="160" height="160"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="160" id="du0-Cq-Rv1"/>
-                            </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3TO-aD-fBD" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
                             <rect key="frame" x="160" y="0.0" width="160" height="160"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="160" id="P0c-vM-gdE"/>
-                            </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bjI-nh-tx4" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
                             <rect key="frame" x="160" y="160" width="160" height="160"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="160" id="r0z-cn-Twk"/>
-                            </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9FC-cY-a7G" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
@@ -85,6 +76,7 @@
                 <constraint firstItem="SFS-jC-ZRR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3kN-AL-1uO"/>
                 <constraint firstAttribute="trailing" secondItem="7XQ-8I-AFt" secondAttribute="trailing" id="RPW-km-Cqn"/>
                 <constraint firstItem="SFS-jC-ZRR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="V7k-kS-ku8"/>
+                <constraint firstItem="7XQ-8I-AFt" firstAttribute="top" secondItem="SFS-jC-ZRR" secondAttribute="bottom" constant="67" id="ZSx-gq-Qqr"/>
                 <constraint firstAttribute="trailing" secondItem="7XQ-8I-AFt" secondAttribute="trailing" id="czt-cA-z1i"/>
                 <constraint firstAttribute="bottom" secondItem="7XQ-8I-AFt" secondAttribute="bottom" constant="67" id="ky6-nb-oHR"/>
                 <constraint firstItem="7XQ-8I-AFt" firstAttribute="top" secondItem="SFS-jC-ZRR" secondAttribute="bottom" constant="67" id="nFT-eu-SY7"/>

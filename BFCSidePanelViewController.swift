@@ -12,12 +12,10 @@ import UIKit
         protocol MenuViewControllerDelegate {
             // func animalSelected(animal: Animal)
         }
-        
+
 class BFCSidePanelViewController: BFCBaseViewController {
-
+    @IBOutlet weak var tableViewCell: UITableView!
     
-    @IBOutlet weak var sidePanelView: UITableView!
-
     var animals: Array<MenuData>!
     struct TableView {
         struct CellIdentifiers {
@@ -26,20 +24,15 @@ class BFCSidePanelViewController: BFCBaseViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        sidePanelView.registerNib(UINib(nibName:"BFCSidePanelTableViewCell", bundle: nil), forCellReuseIdentifier: "SideMenuCell")
-        sidePanelView.reloadData()
+        tableViewCell.registerNib(UINib(nibName:"BFCSidePanelTableViewCell", bundle: nil), forCellReuseIdentifier: "SideMenuCell")
+        tableViewCell.reloadData()
         
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
-        }
+
+
+}
+
         extension BFCSidePanelViewController: UITableViewDataSource {
             
             func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -65,5 +58,4 @@ class BFCSidePanelViewController: BFCBaseViewController {
             }
             
         }
-
-
+        
