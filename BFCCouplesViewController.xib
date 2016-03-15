@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BFCCouplesViewController" customModule="BFC" customModuleProvider="target">
             <connections>
-                <outlet property="boyImageAction" destination="Keq-eg-iek" id="Ac0-8e-BD4"/>
-                <outlet property="girlImageAction" destination="r4L-aQ-K85" id="Dn2-A9-ux1"/>
+                <outlet property="boyImageView" destination="Keq-eg-iek" id="0zx-04-x1i"/>
+                <outlet property="girlImageView" destination="r4L-aQ-K85" id="58R-PD-6qe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="wEm-Km-TGI"/>
             </connections>
         </placeholder>
@@ -17,17 +17,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-aQ-K85" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
+                <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-aQ-K85">
                     <rect key="frame" x="0.0" y="316" width="320" height="252"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="height" constant="252" id="tgo-oE-Nsg"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Yv1-kZ-680" appends="YES" id="8Cn-aS-2hQ"/>
+                    </connections>
                 </imageView>
-                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoyCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="Keq-eg-iek" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
+                <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoyCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="Keq-eg-iek">
                     <rect key="frame" x="0.0" y="64" width="320" height="252"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="height" constant="252" id="Efa-9C-O4g"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="fPt-zt-7yr" appends="YES" id="pzK-ml-Uwu"/>
+                    </connections>
                 </imageView>
             </subviews>
             <constraints>
@@ -41,8 +49,18 @@
                 <constraint firstItem="r4L-aQ-K85" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x3b-IX-9ZO"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="245" y="400"/>
+            <point key="canvasLocation" x="387" y="397"/>
         </view>
+        <tapGestureRecognizer id="fPt-zt-7yr">
+            <connections>
+                <action selector="boyImageAction:" destination="-1" id="EMG-yA-MJd"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Yv1-kZ-680">
+            <connections>
+                <action selector="girlImageAction:" destination="-1" id="e89-nt-4NF"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="BoyCouplesImage" width="966" height="1300"/>

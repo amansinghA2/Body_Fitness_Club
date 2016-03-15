@@ -13,8 +13,8 @@ protocol BFCExerciseWorkoutViewControllerDelegate {
     func toggleLeftPanel()
     
 }
-class BFCExerciseWorkoutViewController: BFCBaseViewController {
-    //var isLoaded = false
+class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDelegate {
+     var window: UIWindow?
     var delegate:BFCExerciseWorkoutViewControllerDelegate?
     
     @IBAction func menuButton(sender: AnyObject) {
@@ -22,21 +22,57 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController {
     }
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
-    @IBOutlet weak var strengthImage: BFCImage!
-    @IBOutlet weak var yogaImage: BFCImage!
-    @IBOutlet weak var cardioImage: BFCImage!
-    @IBOutlet weak var strechingImage: BFCImage!
+    @IBOutlet weak var strengthImage: UIImageView!
+    @IBOutlet weak var yogaImage: UIImageView!
+    @IBOutlet weak var cardioImage: UIImageView!
+    @IBOutlet weak var strechingImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        segmentImageLoad()
+       
+      segmentImageLoad()
         
+    }
+    override func viewWillAppear(animated: Bool) {
+   
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    
+    
+    @IBAction func strengthImageAction(sender: AnyObject) {
+    imageSegue()
+    }
+    
+    @IBAction func yogaImageAction(sender: AnyObject) {
+    imageSegue()
+    }
+    
+    @IBAction func cardioImageAction(sender: AnyObject) {
+    imageSegue()
+    }
+    
+    @IBAction func stretchingImageAction(sender: AnyObject) {
+    imageSegue()
+    }
+    
+    
+    /*
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
+    }
+    */
+
+//  Used Functions
     
     func segmentImageLoad(){
         switch self.segmentControl.selectedSegmentIndex {
@@ -55,14 +91,14 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    func imageSegue() {
+        switch segmentControl.selectedSegmentIndex {
+        case 0:
+            performSegueWithIdentifier("ExerciseDetailIdentifier", sender: nil)
+        case 1:
+            performSegueWithIdentifier("WorkoutDetailIdentifier", sender: nil)
+        default:
+            print("")
+      }
     }
-    */
-    
 }
