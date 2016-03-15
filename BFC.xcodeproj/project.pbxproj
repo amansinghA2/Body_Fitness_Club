@@ -45,6 +45,7 @@
 		07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */; };
 		07FE0B191C957CED00A0FA84 /* BFCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE0B181C957CED00A0FA84 /* BFCImage.swift */; };
 		BCBC96391C97E92900A7AF9E /* CAT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC96381C97E92900A7AF9E /* CAT.jpeg */; };
+		BCBC963B1C97ECD200A7AF9E /* builder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC963A1C97ECD200A7AF9E /* builder.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCSidePanelTableViewCell.xib; sourceTree = "<group>"; };
 		07FE0B181C957CED00A0FA84 /* BFCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCImage.swift; sourceTree = "<group>"; };
 		BCBC96381C97E92900A7AF9E /* CAT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CAT.jpeg; sourceTree = "<group>"; };
+		BCBC963A1C97ECD200A7AF9E /* builder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = builder.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				07648C161C93FFFF0032009F /* Main.storyboard */,
 				07648C1C1C93FFFF0032009F /* Assets.xcassets */,
 				BCBC96381C97E92900A7AF9E /* CAT.jpeg */,
+				BCBC963A1C97ECD200A7AF9E /* builder.jpeg */,
 				07648C1E1C93FFFF0032009F /* LaunchScreen.storyboard */,
 				07648C211C93FFFF0032009F /* Info.plist */,
 				07648C191C93FFFF0032009F /* BFC.xcdatamodeld */,
@@ -361,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBC963B1C97ECD200A7AF9E /* builder.jpeg in Resources */,
 				07648C201C93FFFF0032009F /* LaunchScreen.storyboard in Resources */,
 				07648C751C9401700032009F /* BFCExerciseDetailViewController.xib in Resources */,
 				07648C811C9401B30032009F /* BFCWorkoutDetailViewController.xib in Resources */,

@@ -29,6 +29,8 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let image = UIImage(named: "Hamburger")
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
         segmentImageLoad()
         
     }

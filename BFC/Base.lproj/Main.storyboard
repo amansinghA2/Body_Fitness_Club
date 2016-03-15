@@ -25,6 +25,8 @@
                 <viewController storyboardIdentifier="CenterViewController" id="Xv2-57-cmA" customClass="BFCExerciseWorkoutViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ocM-hI-YHw">
                         <barButtonItem key="leftBarButtonItem" image="Hamburger" style="plain" id="IRX-3t-jI0">
+                            <inset key="imageInsets" minX="-16" minY="10" maxX="37" maxY="13"/>
+                            <color key="tintColor" red="0.27450980390000002" green="0.50980392159999999" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="menuButton:" destination="Xv2-57-cmA" id="9Lj-Pv-oiO"/>
                             </connections>
@@ -65,11 +67,11 @@
             </objects>
             <point key="canvasLocation" x="1345" y="787"/>
         </scene>
-        <!--Exercise Detail View Controller-->
+        <!--Exiercise detailView Controller-->
         <scene sceneID="8DK-Tn-Rjp">
             <objects>
                 <viewController id="RrJ-pt-upg" customClass="BFCExerciseDetailViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xeR-SL-aSJ"/>
+                    <navigationItem key="navigationItem" title="Exiercise detailView Controller" id="xeR-SL-aSJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="icz-mN-yku" kind="push" identifier="BodypartExercisesIdentifier" id="NqS-QS-qbE"/>
@@ -79,11 +81,11 @@
             </objects>
             <point key="canvasLocation" x="967" y="38"/>
         </scene>
-        <!--Workout Detail View Controller-->
+        <!--Workout View Controller-->
         <scene sceneID="OMt-de-fUc">
             <objects>
                 <viewController id="47L-ZB-nxg" customClass="BFCWorkoutDetailViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="bkO-O6-E5S"/>
+                    <navigationItem key="navigationItem" title="Workout View Controller" id="bkO-O6-E5S"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="tlD-JJ-cuv" kind="push" identifier="WorkoutWeeklyScheduleIdentifier" id="cbU-rp-L5C"/>
