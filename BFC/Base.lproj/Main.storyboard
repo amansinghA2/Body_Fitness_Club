@@ -17,7 +17,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUG-Qi-ZpI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="179" y="305"/>
+            <point key="canvasLocation" x="137" y="305"/>
         </scene>
         <!--Exercise Workout View Controller-->
         <scene sceneID="tgZ-Oo-VOh">

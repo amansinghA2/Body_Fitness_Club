@@ -20,13 +20,5 @@ class BFCBaseViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func couplesSegue(){
-    performSegueWithIdentifier("ExerciseWorkoutIdentifier", sender: nil)
-    }
-
-    func exercisesSegue(){
-    performSegueWithIdentifier("ExerciseDetailIdentifier", sender: nil)
-    }
 
 }

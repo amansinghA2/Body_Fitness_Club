@@ -43,7 +43,6 @@
 		077E0BA31C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077E0BA11C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib */; };
 		07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */; };
 		07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */; };
-		07FE0B191C957CED00A0FA84 /* BFCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE0B181C957CED00A0FA84 /* BFCImage.swift */; };
 		BCBC96391C97E92900A7AF9E /* CAT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC96381C97E92900A7AF9E /* CAT.jpeg */; };
 		BCBC963B1C97ECD200A7AF9E /* builder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC963A1C97ECD200A7AF9E /* builder.jpeg */; };
 /* End PBXBuildFile section */
@@ -108,7 +107,6 @@
 		077E0BA11C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailTableViewCell.xib; sourceTree = "<group>"; };
 		07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCSidePanelTableViewCell.swift; sourceTree = "<group>"; };
 		07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCSidePanelTableViewCell.xib; sourceTree = "<group>"; };
-		07FE0B181C957CED00A0FA84 /* BFCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCImage.swift; sourceTree = "<group>"; };
 		BCBC96381C97E92900A7AF9E /* CAT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CAT.jpeg; sourceTree = "<group>"; };
 		BCBC963A1C97ECD200A7AF9E /* builder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = builder.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,7 +241,6 @@
 			children = (
 				074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */,
 				07648C8E1C9404620032009F /* BFCContainerViewController.swift */,
-				07FE0B181C957CED00A0FA84 /* BFCImage.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -414,7 +411,6 @@
 				07648C701C9401580032009F /* BFCExerciseDescriptionViewController.swift in Sources */,
 				07648C1B1C93FFFF0032009F /* BFC.xcdatamodeld in Sources */,
 				07648C641C9400E00032009F /* BFCBodyPartsExercisesViewController.swift in Sources */,
-				07FE0B191C957CED00A0FA84 /* BFCImage.swift in Sources */,
 				07648C741C9401700032009F /* BFCExerciseDetailViewController.swift in Sources */,
 				07648C881C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */,
 				07648C8F1C9404620032009F /* BFCContainerViewController.swift in Sources */,
