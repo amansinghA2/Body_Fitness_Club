@@ -29,6 +29,13 @@
 		07648C791C9401840032009F /* BFCExerciseWorkoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C771C9401840032009F /* BFCExerciseWorkoutViewController.xib */; };
 		07648C7C1C94019F0032009F /* BFCSidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C7A1C94019F0032009F /* BFCSidePanelViewController.swift */; };
 		07648C7D1C94019F0032009F /* BFCSidePanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C7B1C94019F0032009F /* BFCSidePanelViewController.xib */; };
+		07648C801C9401B30032009F /* BFCWorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C7E1C9401B30032009F /* BFCWorkoutDetailViewController.swift */; };
+		07648C811C9401B30032009F /* BFCWorkoutDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C7F1C9401B30032009F /* BFCWorkoutDetailViewController.xib */; };
+		07648C841C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C821C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift */; };
+		07648C851C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C831C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib */; };
+		07648C881C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C861C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift */; };
+		07648C891C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07648C871C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib */; };
+		07648C8C1C9402030032009F /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C8B1C9402030032009F /* MenuData.swift */; };
 		07648C8F1C9404620032009F /* BFCContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C8E1C9404620032009F /* BFCContainerViewController.swift */; };
 		077E0B9E1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077E0B9C1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift */; };
 		077E0B9F1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077E0B9D1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib */; };
@@ -37,13 +44,7 @@
 		07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */; };
 		07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */; };
 		07FE0B191C957CED00A0FA84 /* BFCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FE0B181C957CED00A0FA84 /* BFCImage.swift */; };
-		BC11A49E1C96B6AB00AA4D21 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11A49D1C96B6AB00AA4D21 /* MenuData.swift */; };
-		BC11A4A11C96B6D700AA4D21 /* BFCWorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11A49F1C96B6D700AA4D21 /* BFCWorkoutDetailViewController.swift */; };
-		BC11A4A21C96B6D700AA4D21 /* BFCWorkoutDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC11A4A01C96B6D700AA4D21 /* BFCWorkoutDetailViewController.xib */; };
-		BC11A4A51C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11A4A31C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.swift */; };
-		BC11A4A61C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC11A4A41C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.xib */; };
-		BC11A4A91C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11A4A71C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.swift */; };
-		BC11A4AA1C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC11A4A81C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.xib */; };
+		BCBC96391C97E92900A7AF9E /* CAT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC96381C97E92900A7AF9E /* CAT.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,13 @@
 		07648C771C9401840032009F /* BFCExerciseWorkoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCExerciseWorkoutViewController.xib; sourceTree = "<group>"; };
 		07648C7A1C94019F0032009F /* BFCSidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCSidePanelViewController.swift; sourceTree = "<group>"; };
 		07648C7B1C94019F0032009F /* BFCSidePanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCSidePanelViewController.xib; sourceTree = "<group>"; };
+		07648C7E1C9401B30032009F /* BFCWorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutDetailViewController.swift; sourceTree = "<group>"; };
+		07648C7F1C9401B30032009F /* BFCWorkoutDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailViewController.xib; sourceTree = "<group>"; };
+		07648C821C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutExercisesDescriptionViewController.swift; sourceTree = "<group>"; };
+		07648C831C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutExercisesDescriptionViewController.xib; sourceTree = "<group>"; };
+		07648C861C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutWeeklyScheduleViewController.swift; sourceTree = "<group>"; };
+		07648C871C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutWeeklyScheduleViewController.xib; sourceTree = "<group>"; };
+		07648C8B1C9402030032009F /* MenuData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
 		07648C8E1C9404620032009F /* BFCContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCContainerViewController.swift; sourceTree = "<group>"; };
 		077E0B9C1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCExerciseDetailTableViewCell.swift; sourceTree = "<group>"; };
 		077E0B9D1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCExerciseDetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -100,13 +108,7 @@
 		07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCSidePanelTableViewCell.swift; sourceTree = "<group>"; };
 		07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCSidePanelTableViewCell.xib; sourceTree = "<group>"; };
 		07FE0B181C957CED00A0FA84 /* BFCImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCImage.swift; sourceTree = "<group>"; };
-		BC11A49D1C96B6AB00AA4D21 /* MenuData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
-		BC11A49F1C96B6D700AA4D21 /* BFCWorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutDetailViewController.swift; sourceTree = "<group>"; };
-		BC11A4A01C96B6D700AA4D21 /* BFCWorkoutDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailViewController.xib; sourceTree = "<group>"; };
-		BC11A4A31C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutWeeklyScheduleViewController.swift; sourceTree = "<group>"; };
-		BC11A4A41C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutWeeklyScheduleViewController.xib; sourceTree = "<group>"; };
-		BC11A4A71C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutExercisesDescriptionViewController.swift; sourceTree = "<group>"; };
-		BC11A4A81C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutExercisesDescriptionViewController.xib; sourceTree = "<group>"; };
+		BCBC96381C97E92900A7AF9E /* CAT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CAT.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				07648C121C93FFFF0032009F /* AppDelegate.swift */,
 				07648C161C93FFFF0032009F /* Main.storyboard */,
 				07648C1C1C93FFFF0032009F /* Assets.xcassets */,
+				BCBC96381C97E92900A7AF9E /* CAT.jpeg */,
 				07648C1E1C93FFFF0032009F /* LaunchScreen.storyboard */,
 				07648C211C93FFFF0032009F /* Info.plist */,
 				07648C191C93FFFF0032009F /* BFC.xcdatamodeld */,
@@ -208,18 +211,18 @@
 				07648C771C9401840032009F /* BFCExerciseWorkoutViewController.xib */,
 				07648C6E1C9401580032009F /* BFCExerciseDescriptionViewController.swift */,
 				07648C6F1C9401580032009F /* BFCExerciseDescriptionViewController.xib */,
+				07648C7E1C9401B30032009F /* BFCWorkoutDetailViewController.swift */,
+				07648C7F1C9401B30032009F /* BFCWorkoutDetailViewController.xib */,
 				07648C621C9400E00032009F /* BFCBodyPartsExercisesViewController.swift */,
 				07648C631C9400E00032009F /* BFCBodyPartsExercisesViewController.xib */,
+				07648C861C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift */,
+				07648C871C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib */,
 				07648C6A1C9401400032009F /* BFCDayPlanExercisesViewController.swift */,
 				07648C6B1C9401400032009F /* BFCDayPlanExercisesViewController.xib */,
 				07648C721C9401700032009F /* BFCExerciseDetailViewController.swift */,
 				07648C731C9401700032009F /* BFCExerciseDetailViewController.xib */,
-				BC11A49F1C96B6D700AA4D21 /* BFCWorkoutDetailViewController.swift */,
-				BC11A4A01C96B6D700AA4D21 /* BFCWorkoutDetailViewController.xib */,
-				BC11A4A31C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.swift */,
-				BC11A4A41C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.xib */,
-				BC11A4A71C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.swift */,
-				BC11A4A81C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.xib */,
+				07648C821C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift */,
+				07648C831C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -227,7 +230,7 @@
 		07648C8A1C9401E70032009F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC11A49D1C96B6AB00AA4D21 /* MenuData.swift */,
+				07648C8B1C9402030032009F /* MenuData.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -360,19 +363,20 @@
 			files = (
 				07648C201C93FFFF0032009F /* LaunchScreen.storyboard in Resources */,
 				07648C751C9401700032009F /* BFCExerciseDetailViewController.xib in Resources */,
+				07648C811C9401B30032009F /* BFCWorkoutDetailViewController.xib in Resources */,
 				07648C791C9401840032009F /* BFCExerciseWorkoutViewController.xib in Resources */,
+				07648C891C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib in Resources */,
 				077E0B9F1C95C022004B181C /* BFCExerciseDetailTableViewCell.xib in Resources */,
 				07648C651C9400E00032009F /* BFCBodyPartsExercisesViewController.xib in Resources */,
-				BC11A4AA1C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.xib in Resources */,
 				07648C6D1C9401400032009F /* BFCDayPlanExercisesViewController.xib in Resources */,
-				BC11A4A21C96B6D700AA4D21 /* BFCWorkoutDetailViewController.xib in Resources */,
 				07648C711C9401580032009F /* BFCExerciseDescriptionViewController.xib in Resources */,
 				07648C1D1C93FFFF0032009F /* Assets.xcassets in Resources */,
 				077E0BA31C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib in Resources */,
 				07648C691C94010A0032009F /* BFCCouplesViewController.xib in Resources */,
+				07648C851C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib in Resources */,
 				07648C7D1C94019F0032009F /* BFCSidePanelViewController.xib in Resources */,
 				07648C181C93FFFF0032009F /* Main.storyboard in Resources */,
-				BC11A4A61C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.xib in Resources */,
+				BCBC96391C97E92900A7AF9E /* CAT.jpeg in Resources */,
 				07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,24 +402,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC11A4A51C96B6F500AA4D21 /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */,
 				074B6E671C95A7EC007E365C /* BFCBaseViewController.swift in Sources */,
-				BC11A49E1C96B6AB00AA4D21 /* MenuData.swift in Sources */,
+				07648C801C9401B30032009F /* BFCWorkoutDetailViewController.swift in Sources */,
 				07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */,
+				07648C841C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */,
 				07648C681C94010A0032009F /* BFCCouplesViewController.swift in Sources */,
 				07648C701C9401580032009F /* BFCExerciseDescriptionViewController.swift in Sources */,
 				07648C1B1C93FFFF0032009F /* BFC.xcdatamodeld in Sources */,
 				07648C641C9400E00032009F /* BFCBodyPartsExercisesViewController.swift in Sources */,
 				07FE0B191C957CED00A0FA84 /* BFCImage.swift in Sources */,
 				07648C741C9401700032009F /* BFCExerciseDetailViewController.swift in Sources */,
+				07648C881C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */,
 				07648C8F1C9404620032009F /* BFCContainerViewController.swift in Sources */,
 				07648C6C1C9401400032009F /* BFCDayPlanExercisesViewController.swift in Sources */,
 				07648C131C93FFFF0032009F /* AppDelegate.swift in Sources */,
 				077E0BA21C95C042004B181C /* BFCWorkoutDetailTableViewCell.swift in Sources */,
 				07648C7C1C94019F0032009F /* BFCSidePanelViewController.swift in Sources */,
+				07648C8C1C9402030032009F /* MenuData.swift in Sources */,
 				077E0B9E1C95C022004B181C /* BFCExerciseDetailTableViewCell.swift in Sources */,
-				BC11A4A11C96B6D700AA4D21 /* BFCWorkoutDetailViewController.swift in Sources */,
-				BC11A4A91C96B71A00AA4D21 /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */,
 				07648C781C9401840032009F /* BFCExerciseWorkoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

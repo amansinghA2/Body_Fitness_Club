@@ -17,23 +17,23 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoyCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="Keq-eg-iek" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-aQ-K85" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="316" width="320" height="252"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="284" id="Efa-9C-O4g"/>
+                        <constraint firstAttribute="height" constant="252" id="tgo-oE-Nsg"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-aQ-K85" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoyCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="Keq-eg-iek" customClass="BFCImage" customModule="BFC" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="64" width="320" height="252"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="284" id="tgo-oE-Nsg"/>
+                        <constraint firstAttribute="height" constant="252" id="Efa-9C-O4g"/>
                     </constraints>
                 </imageView>
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="r4L-aQ-K85" secondAttribute="trailing" id="8he-U1-vtn"/>
                 <constraint firstAttribute="bottom" secondItem="r4L-aQ-K85" secondAttribute="bottom" id="CN0-cc-HIs"/>
-                <constraint firstItem="Keq-eg-iek" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DIY-c9-DFC"/>
+                <constraint firstItem="Keq-eg-iek" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="DIY-c9-DFC"/>
                 <constraint firstItem="r4L-aQ-K85" firstAttribute="top" secondItem="Keq-eg-iek" secondAttribute="bottom" id="KpX-h8-TC9"/>
                 <constraint firstItem="Keq-eg-iek" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YaT-aZ-7Ew"/>
                 <constraint firstItem="r4L-aQ-K85" firstAttribute="top" secondItem="Keq-eg-iek" secondAttribute="bottom" id="bBF-dV-P4x"/>

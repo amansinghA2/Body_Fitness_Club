@@ -10,19 +10,17 @@ import UIKit
 
 class BFCSidePanelTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var menuCellImage: UIImageView!
+    @IBOutlet weak var cellImageView: UIImageView!
+    @IBOutlet weak var cellLabelView: UILabel!
     
-    @IBOutlet weak var labelCell: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     func configureForData(menuData: MenuData) {
-        labelCell.text = menuData.title
-        menuCellImage.image = menuData.image
+       cellLabelView.text = menuData.title
+        cellImageView.image = menuData.image
     }
-
-
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
