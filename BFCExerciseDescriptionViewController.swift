@@ -21,7 +21,7 @@ class BFCExerciseDescriptionViewController: BFCBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 
@@ -32,4 +32,26 @@ class BFCExerciseDescriptionViewController: BFCBaseViewController {
     }
     */
 
+}
+
+extension BFCExerciseDescriptionViewController: UITableViewDataSource , UITableViewDelegate {
+  
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("" , forIndexPath: indexPath)
+        
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("", sender: nil)
+    }
+    
 }

@@ -29,8 +29,6 @@ class BFCCouplesViewController: BFCBaseViewController , UIApplicationDelegate {
         let containerViewController = ContainerViewController()
         window!.rootViewController = containerViewController
         window!.makeKeyAndVisible()
-        performSegueWithIdentifier("ExerciseWorkoutIdentifier", sender: nil)
-
     }
     
     @IBAction func girlImageAction(sender: AnyObject) {

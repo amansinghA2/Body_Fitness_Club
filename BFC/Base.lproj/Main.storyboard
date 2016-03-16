@@ -135,7 +135,6 @@
         <!--Navigation Controller-->
         <scene sceneID="2zY-1I-43T">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="crl-dh-ga4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d7s-kK-u9k" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -148,6 +147,7 @@
                         <segue destination="uVt-gs-OK9" kind="relationship" relationship="rootViewController" id="9pH-K8-H9U"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crl-dh-ga4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-217" y="305"/>
         </scene>
