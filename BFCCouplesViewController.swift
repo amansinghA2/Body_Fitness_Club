@@ -16,6 +16,7 @@ class BFCCouplesViewController: BFCBaseViewController , UIApplicationDelegate {
     @IBOutlet weak var boyImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.navigationController?.navigationBarHidden = true
         // Do any additional setup after loading the view.
     }
 

@@ -10,9 +10,10 @@ import UIKit
 
 class BFCBodyPartsExercisesViewController: BFCBaseViewController {
 
+    @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ self.tableView.registerNib(UINib(nibName: "BFCExerciseWorkoutDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "ExerciseDetailCell")
         // Do any additional setup after loading the view.
     }
 
@@ -32,4 +33,29 @@ class BFCBodyPartsExercisesViewController: BFCBaseViewController {
     }
     */
 
+}
+
+extension BFCBodyPartsExercisesViewController: UITableViewDataSource , UITableViewDelegate {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ExerciseDetailCell" , forIndexPath: indexPath) as! BFCExerciseWorkoutDetailTableViewCell
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("ExerciseDescriptionIdentifier", sender: nil)
+    }
+    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
 }

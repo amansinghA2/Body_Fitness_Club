@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BFCExerciseDescriptionViewController" customModule="BFC" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="G4r-nW-uDH"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,20 +15,37 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-KQ-Yzq">
-                    <rect key="frame" x="0.0" y="136" width="320" height="432"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardio_image" translatesAutoresizingMaskIntoConstraints="NO" id="dAL-w4-jF6">
+                    <rect key="frame" x="12" y="64" width="297" height="226"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="226" id="36a-lf-FC4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iy1-oO-OEz">
+                    <rect key="frame" x="12" y="338" width="297" height="177"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="177" id="rz2-IQ-I2f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Unz-KQ-Yzq" secondAttribute="trailing" id="ReT-z2-Ohz"/>
-                <constraint firstItem="Unz-KQ-Yzq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bi0-Ah-sXP"/>
-                <constraint firstAttribute="bottom" secondItem="Unz-KQ-Yzq" secondAttribute="bottom" id="hwg-Sa-Khj"/>
-                <constraint firstItem="Unz-KQ-Yzq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="136" id="pAE-N3-geI"/>
+                <constraint firstItem="iy1-oO-OEz" firstAttribute="top" secondItem="dAL-w4-jF6" secondAttribute="bottom" constant="48" id="1XF-WJ-YDm"/>
+                <constraint firstItem="dAL-w4-jF6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="3Fl-Jb-1g6"/>
+                <constraint firstItem="dAL-w4-jF6" firstAttribute="trailing" secondItem="iy1-oO-OEz" secondAttribute="trailing" id="NUE-dg-Rv6"/>
+                <constraint firstItem="iy1-oO-OEz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TLn-EQ-QaG"/>
+                <constraint firstItem="iy1-oO-OEz" firstAttribute="leading" secondItem="dAL-w4-jF6" secondAttribute="leading" id="pFV-WN-lLi"/>
+                <constraint firstAttribute="bottom" secondItem="iy1-oO-OEz" secondAttribute="bottom" constant="53" id="tie-UK-73h"/>
+                <constraint firstItem="dAL-w4-jF6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="xDJ-94-CFX"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="405" y="365"/>
+            <point key="canvasLocation" x="574" y="351"/>
         </view>
     </objects>
+    <resources>
+        <image name="cardio_image" width="1188" height="1028"/>
+    </resources>
 </document>

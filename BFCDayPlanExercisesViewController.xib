@@ -1,19 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BFCDayPlanExercisesViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BFCDayPlanExercisesViewController" customModule="BFC" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="thY-0g-C4O" id="CSW-Uk-2JS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="thY-0g-C4O">
+                    <rect key="frame" x="0.0" y="244" width="320" height="324"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="AFV-S6-aDG"/>
+                        <outlet property="delegate" destination="-1" id="kVm-QJ-ajf"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-xR-ZAM">
+                    <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="beV-UD-gsv"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zQK-xR-ZAM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Ls-KU-iMI"/>
+                <constraint firstAttribute="trailing" secondItem="thY-0g-C4O" secondAttribute="trailing" id="7Gv-LH-M5T"/>
+                <constraint firstItem="thY-0g-C4O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FZ3-NS-2m2"/>
+                <constraint firstItem="zQK-xR-ZAM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="KFF-0v-BlC"/>
+                <constraint firstAttribute="bottom" secondItem="thY-0g-C4O" secondAttribute="bottom" id="ThL-mA-Twj"/>
+                <constraint firstAttribute="trailing" secondItem="zQK-xR-ZAM" secondAttribute="trailing" id="d8e-91-mGK"/>
+                <constraint firstItem="thY-0g-C4O" firstAttribute="top" secondItem="zQK-xR-ZAM" secondAttribute="bottom" id="r88-9N-wyC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="523" y="355"/>
         </view>
     </objects>
+    <resources>
+        <image name="GirlCouplesImage" width="1300" height="1072"/>
+    </resources>
 </document>

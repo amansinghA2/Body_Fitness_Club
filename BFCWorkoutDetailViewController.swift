@@ -2,17 +2,19 @@
 //  BFCWorkoutDetailViewController.swift
 //  BFC
 //
-//  Created by Aman on 3/12/16.
+//  Created by aman on 16/03/16.
 //  Copyright © 2016 Aman. All rights reserved.
 //
 
 import UIKit
 
-class BFCWorkoutDetailViewController: BFCBaseViewController {
+class BFCWorkoutDetailViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    self.tableView.registerNib(UINib(nibName: "BFCExerciseWorkoutDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "ExerciseDetailCell")
         // Do any additional setup after loading the view.
     }
 
@@ -32,4 +34,29 @@ class BFCWorkoutDetailViewController: BFCBaseViewController {
     }
     */
 
+}
+
+extension BFCWorkoutDetailViewController: UITableViewDataSource , UITableViewDelegate {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("ExerciseDetailCell" , forIndexPath: indexPath) as! BFCExerciseWorkoutDetailTableViewCell
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("WorkoutWeeklyIdentifier", sender: nil)
+    }
+    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
 }

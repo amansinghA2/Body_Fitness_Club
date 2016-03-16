@@ -9,10 +9,10 @@
 import UIKit
 
 class BFCExerciseDescriptionViewController: BFCBaseViewController {
-
+    
+    @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -31,27 +31,5 @@ class BFCExerciseDescriptionViewController: BFCBaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
-
-extension BFCExerciseDescriptionViewController: UITableViewDataSource , UITableViewDelegate {
-  
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("" , forIndexPath: indexPath)
-        
-        return cell
-    }
-    
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("", sender: nil)
-    }
     
 }

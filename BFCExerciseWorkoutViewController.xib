@@ -63,6 +63,11 @@
                                 <constraint firstAttribute="height" constant="160" id="WEx-t0-JF6"/>
                                 <constraint firstAttribute="width" constant="160" id="n1V-c1-3DN"/>
                             </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="WEx-t0-JF6"/>
+                                </mask>
+                            </variation>
                             <connections>
                                 <outletCollection property="gestureRecognizers" destination="wZM-fC-qaD" appends="YES" id="yjl-mj-XdV"/>
                             </connections>
@@ -70,16 +75,22 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="Tmo-GJ-aRy" firstAttribute="width" secondItem="9FC-cY-a7G" secondAttribute="width" id="50W-q8-lZG"/>
                         <constraint firstItem="Tmo-GJ-aRy" firstAttribute="top" secondItem="9FC-cY-a7G" secondAttribute="bottom" id="6Ww-oi-itx"/>
                         <constraint firstItem="3TO-aD-fBD" firstAttribute="top" secondItem="7XQ-8I-AFt" secondAttribute="top" id="9BR-3d-QoQ"/>
                         <constraint firstItem="bjI-nh-tx4" firstAttribute="leading" secondItem="Tmo-GJ-aRy" secondAttribute="trailing" id="9MF-wU-vep"/>
                         <constraint firstItem="Tmo-GJ-aRy" firstAttribute="leading" secondItem="7XQ-8I-AFt" secondAttribute="leading" id="DwY-5p-5zR"/>
                         <constraint firstItem="bjI-nh-tx4" firstAttribute="top" secondItem="3TO-aD-fBD" secondAttribute="bottom" id="Ehk-Og-s2r"/>
+                        <constraint firstItem="bjI-nh-tx4" firstAttribute="height" secondItem="9FC-cY-a7G" secondAttribute="height" id="FhZ-Hw-tTN"/>
                         <constraint firstAttribute="bottom" secondItem="Tmo-GJ-aRy" secondAttribute="bottom" id="HHq-Ug-Q6c"/>
                         <constraint firstItem="3TO-aD-fBD" firstAttribute="leading" secondItem="9FC-cY-a7G" secondAttribute="trailing" id="IAx-Aj-Ljo"/>
                         <constraint firstItem="9FC-cY-a7G" firstAttribute="top" secondItem="7XQ-8I-AFt" secondAttribute="top" id="OxM-vy-dvg"/>
                         <constraint firstAttribute="trailing" secondItem="bjI-nh-tx4" secondAttribute="trailing" id="SU1-EV-eBa"/>
                         <constraint firstItem="Tmo-GJ-aRy" firstAttribute="top" secondItem="bjI-nh-tx4" secondAttribute="top" id="Uog-VT-GM8"/>
+                        <constraint firstItem="3TO-aD-fBD" firstAttribute="width" secondItem="9FC-cY-a7G" secondAttribute="width" id="Voz-fv-Yk2"/>
+                        <constraint firstItem="3TO-aD-fBD" firstAttribute="height" secondItem="9FC-cY-a7G" secondAttribute="height" id="a0C-lQ-HiC"/>
+                        <constraint firstItem="Tmo-GJ-aRy" firstAttribute="height" secondItem="9FC-cY-a7G" secondAttribute="height" id="a1J-8S-CW6"/>
+                        <constraint firstItem="bjI-nh-tx4" firstAttribute="width" secondItem="9FC-cY-a7G" secondAttribute="width" id="am7-DJ-fwM"/>
                         <constraint firstItem="Tmo-GJ-aRy" firstAttribute="trailing" secondItem="9FC-cY-a7G" secondAttribute="trailing" id="k2Y-g1-2gr"/>
                         <constraint firstAttribute="bottom" secondItem="bjI-nh-tx4" secondAttribute="bottom" id="lq2-PC-3qI"/>
                         <constraint firstAttribute="trailing" secondItem="3TO-aD-fBD" secondAttribute="trailing" id="uiD-N7-p0d"/>

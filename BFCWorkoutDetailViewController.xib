@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BFCWorkoutDetailViewController" customModule="BFC" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="OAz-2p-9ny" id="4kd-Nu-hjc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,20 +16,36 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VDk-aP-Hgn">
-                    <rect key="frame" x="0.0" y="136" width="320" height="432"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OAz-2p-9ny">
+                    <rect key="frame" x="0.0" y="244" width="320" height="324"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="f7H-Ly-97S"/>
+                        <outlet property="delegate" destination="-1" id="soF-Ig-z77"/>
+                    </connections>
                 </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="RaP-MU-jJL">
+                    <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="bev-vh-joj"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="VDk-aP-Hgn" secondAttribute="bottom" id="3If-LP-Jnr"/>
-                <constraint firstItem="VDk-aP-Hgn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="136" id="LIo-9l-Gdd"/>
-                <constraint firstItem="VDk-aP-Hgn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jyS-na-oic"/>
-                <constraint firstAttribute="trailing" secondItem="VDk-aP-Hgn" secondAttribute="trailing" id="mmt-JK-iYL"/>
+                <constraint firstItem="RaP-MU-jJL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="5la-ew-X24"/>
+                <constraint firstAttribute="bottom" secondItem="OAz-2p-9ny" secondAttribute="bottom" id="5yT-21-kdN"/>
+                <constraint firstItem="RaP-MU-jJL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FVK-fG-TPN"/>
+                <constraint firstItem="OAz-2p-9ny" firstAttribute="top" secondItem="RaP-MU-jJL" secondAttribute="bottom" id="Oer-Yr-qIh"/>
+                <constraint firstAttribute="trailing" secondItem="OAz-2p-9ny" secondAttribute="trailing" id="Wa2-XM-Xhg"/>
+                <constraint firstItem="OAz-2p-9ny" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZIk-l3-IDa"/>
+                <constraint firstAttribute="trailing" secondItem="RaP-MU-jJL" secondAttribute="trailing" id="vmo-el-dDZ"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="497" y="364"/>
+            <point key="canvasLocation" x="570" y="367"/>
         </view>
     </objects>
+    <resources>
+        <image name="GirlCouplesImage" width="1300" height="1072"/>
+    </resources>
 </document>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d7s-kK-u9k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="d7s-kK-u9k">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Couples View Controller-->
@@ -34,8 +34,8 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="RrJ-pt-upg" kind="push" identifier="ExerciseDetailIdentifier" id="ZXl-CJ-y3v"/>
-                        <segue destination="47L-ZB-nxg" kind="push" identifier="WorkoutDetailIdentifier" id="BdO-OY-ES7"/>
+                        <segue destination="RrJ-pt-upg" kind="show" identifier="ExerciseDetailIdentifier" id="ZXl-CJ-y3v"/>
+                        <segue destination="4RZ-04-cNi" kind="show" identifier="WorkoutDetailIdentifier" id="Phh-po-06d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qV0-2L-DOc" sceneMemberID="firstResponder"/>
@@ -51,7 +51,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBR-jl-ORy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="687"/>
+            <point key="canvasLocation" x="2925" y="687"/>
+        </scene>
+        <!--Workout Detail View Controller-->
+        <scene sceneID="D5N-PP-MqJ">
+            <objects>
+                <viewController id="4RZ-04-cNi" customClass="BFCWorkoutDetailViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IzE-rt-wpw"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="tlD-JJ-cuv" kind="show" identifier="WorkoutWeeklyIdentifier" id="Auu-42-soB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Blt-fh-7Q5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779" y="787"/>
         </scene>
         <!--Workout Weekly Schedule View Controller-->
         <scene sceneID="RIE-vi-Rlm">
@@ -60,21 +74,21 @@
                     <navigationItem key="navigationItem" id="kdY-5E-Qdn"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="0gt-gh-AQc" kind="push" identifier="DayPlanExercisesIdentifier" id="0rv-J6-6rh"/>
+                        <segue destination="0gt-gh-AQc" kind="show" identifier="DayPlanExercisesIdentifier" id="0rv-J6-6rh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWJ-zO-pqQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="687"/>
+            <point key="canvasLocation" x="2157" y="687"/>
         </scene>
-        <!--Exiercise detailView Controller-->
+        <!--Exercise-->
         <scene sceneID="8DK-Tn-Rjp">
             <objects>
                 <viewController id="RrJ-pt-upg" customClass="BFCExerciseDetailViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Exiercise detailView Controller" id="xeR-SL-aSJ"/>
+                    <navigationItem key="navigationItem" title="Exercise" id="xeR-SL-aSJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="icz-mN-yku" kind="push" identifier="BodypartExercisesIdentifier" id="NqS-QS-qbE"/>
+                        <segue destination="icz-mN-yku" kind="show" identifier="BodypartExercisesIdentifier" id="NqS-QS-qbE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0T-MN-1Pl" sceneMemberID="firstResponder"/>
@@ -93,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SB5-Mi-k7p" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="687"/>
+            <point key="canvasLocation" x="1779" y="687"/>
         </scene>
         <!--Day Plan Exercises View Controller-->
         <scene sceneID="7eG-8N-8VA">
@@ -102,12 +116,12 @@
                     <navigationItem key="navigationItem" id="RLo-6x-OMM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="eeN-n9-BHo" kind="push" identifier="WorkoutExcDescIdentifier" id="d8T-8T-oKI"/>
+                        <segue destination="eeN-n9-BHo" kind="show" identifier="WorkoutExcDescIdentifier" id="d8T-8T-oKI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMg-HM-mfy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="687"/>
+            <point key="canvasLocation" x="2537" y="687"/>
         </scene>
         <!--Body Parts Exercises View Controller-->
         <scene sceneID="RBX-qm-4LZ">
@@ -116,7 +130,7 @@
                     <navigationItem key="navigationItem" id="Koy-a2-mCv"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="pPU-ke-URZ" kind="push" identifier="ExerciseDescriptionIdentifier" id="8aQ-Cb-QOf"/>
+                        <segue destination="pPU-ke-URZ" kind="show" identifier="ExerciseDescriptionIdentifier" id="8aQ-Cb-QOf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9T-oK-EyJ" sceneMemberID="firstResponder"/>
@@ -160,12 +174,12 @@
                     <navigationItem key="navigationItem" id="F1C-QY-Tqz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="XQU-pw-JRV" kind="show" identifier="BFCindexsegue" id="kJq-99-npE"/>
+                        <segue destination="mJB-aR-Xkv" kind="show" identifier="BFCindexsegue" id="9vj-bS-Qe6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Sa-Yb-6PO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="958"/>
+            <point key="canvasLocation" x="-135" y="958"/>
         </scene>
         <!--Title-->
         <scene sceneID="n8K-cE-7qf">
@@ -180,30 +194,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7g-5m-zSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="536" y="958"/>
+            <point key="canvasLocation" x="718" y="958"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="a7w-iJ-vZK">
+        <scene sceneID="IPG-cp-pje">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h5c-Mx-Jzw" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mJB-aR-Xkv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tUX-et-Jve">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M2k-FV-9EU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="egn-5S-zed" kind="relationship" relationship="rootViewController" id="ezO-Jc-a3Z"/>
+                        <segue destination="XQU-pw-JRV" kind="relationship" relationship="rootViewController" id="geb-Aa-uhY"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dFl-Gd-Qwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dF-Tl-jSK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-217" y="958"/>
+            <point key="canvasLocation" x="286" y="958"/>
         </scene>
     </scenes>
     <resources>
         <image name="Hamburger" width="88" height="88"/>
         <image name="navigationBackArrowButton" width="11" height="18"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cbU-rp-L5C"/>
+    </inferredMetricsTieBreakers>
 </document>
