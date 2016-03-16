@@ -29,13 +29,13 @@ class BFCCouplesViewController: BFCBaseViewController , UIApplicationDelegate {
         let containerViewController = ContainerViewController()
         window!.rootViewController = containerViewController
         window!.makeKeyAndVisible()
-        performSegueWithIdentifier("ExerciseWorkoutIdentifier", sender: nil)
-
     }
     
     @IBAction func girlImageAction(sender: AnyObject) {
-        performSegueWithIdentifier("ExerciseWorkoutIdentifier", sender: nil)
-
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let containerViewController = ContainerViewController()
+        window!.rootViewController = containerViewController
+        window!.makeKeyAndVisible()
     }
     
 }

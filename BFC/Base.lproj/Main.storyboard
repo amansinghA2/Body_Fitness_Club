@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBR-jl-ORy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2111" y="787"/>
+            <point key="canvasLocation" x="2113" y="687"/>
         </scene>
         <!--Workout Weekly Schedule View Controller-->
         <scene sceneID="RIE-vi-Rlm">
@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWJ-zO-pqQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="787"/>
+            <point key="canvasLocation" x="1345" y="687"/>
         </scene>
         <!--Exiercise detailView Controller-->
         <scene sceneID="8DK-Tn-Rjp">
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SB5-Mi-k7p" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="787"/>
+            <point key="canvasLocation" x="967" y="687"/>
         </scene>
         <!--Day Plan Exercises View Controller-->
         <scene sceneID="7eG-8N-8VA">
@@ -107,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMg-HM-mfy" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="787"/>
+            <point key="canvasLocation" x="1725" y="687"/>
         </scene>
         <!--Body Parts Exercises View Controller-->
         <scene sceneID="RBX-qm-4LZ">
@@ -159,13 +159,51 @@
                 <viewController storyboardIdentifier="LeftViewController" id="egn-5S-zed" customClass="BFCSidePanelViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="F1C-QY-Tqz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="XQU-pw-JRV" kind="show" identifier="BFCindexsegue" id="kJq-99-npE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Sa-Yb-6PO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="948"/>
+            <point key="canvasLocation" x="137" y="958"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="n8K-cE-7qf">
+            <objects>
+                <viewController id="XQU-pw-JRV" customClass="BFCIndexViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="bRB-wd-Sk4">
+                        <barButtonItem key="leftBarButtonItem" image="navigationBackArrowButton" id="TcF-Fa-KjC"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7g-5m-zSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="958"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a7w-iJ-vZK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h5c-Mx-Jzw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tUX-et-Jve">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="egn-5S-zed" kind="relationship" relationship="rootViewController" id="ezO-Jc-a3Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFl-Gd-Qwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217" y="958"/>
         </scene>
     </scenes>
     <resources>
         <image name="Hamburger" width="88" height="88"/>
+        <image name="navigationBackArrowButton" width="11" height="18"/>
     </resources>
 </document>

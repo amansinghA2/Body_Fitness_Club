@@ -43,6 +43,10 @@
 		077E0BA31C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 077E0BA11C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib */; };
 		07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */; };
 		07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */; };
+		8FAD941D1C995B4000362302 /* BFCIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAD941B1C995B4000362302 /* BFCIndexViewController.swift */; };
+		8FAD941E1C995B4000362302 /* BFCIndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FAD941C1C995B4000362302 /* BFCIndexViewController.xib */; };
+		8FAD94211C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAD941F1C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift */; };
+		8FAD94221C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FAD94201C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib */; };
 		BCBC96391C97E92900A7AF9E /* CAT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC96381C97E92900A7AF9E /* CAT.jpeg */; };
 		BCBC963B1C97ECD200A7AF9E /* builder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC963A1C97ECD200A7AF9E /* builder.jpeg */; };
 /* End PBXBuildFile section */
@@ -107,6 +111,10 @@
 		077E0BA11C95C042004B181C /* BFCWorkoutDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailTableViewCell.xib; sourceTree = "<group>"; };
 		07FD2CAB1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCSidePanelTableViewCell.swift; sourceTree = "<group>"; };
 		07FD2CAC1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCSidePanelTableViewCell.xib; sourceTree = "<group>"; };
+		8FAD941B1C995B4000362302 /* BFCIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCIndexViewController.swift; sourceTree = "<group>"; };
+		8FAD941C1C995B4000362302 /* BFCIndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCIndexViewController.xib; sourceTree = "<group>"; };
+		8FAD941F1C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCCostumizeWorkoutTableViewCell.swift; sourceTree = "<group>"; };
+		8FAD94201C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCCostumizeWorkoutTableViewCell.xib; sourceTree = "<group>"; };
 		BCBC96381C97E92900A7AF9E /* CAT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CAT.jpeg; sourceTree = "<group>"; };
 		BCBC963A1C97ECD200A7AF9E /* builder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = builder.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +232,10 @@
 				07648C731C9401700032009F /* BFCExerciseDetailViewController.xib */,
 				07648C821C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift */,
 				07648C831C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.xib */,
+				8FAD941B1C995B4000362302 /* BFCIndexViewController.swift */,
+				8FAD941C1C995B4000362302 /* BFCIndexViewController.xib */,
+				8FAD941F1C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift */,
+				8FAD94201C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -378,7 +390,9 @@
 				07648C7D1C94019F0032009F /* BFCSidePanelViewController.xib in Resources */,
 				07648C181C93FFFF0032009F /* Main.storyboard in Resources */,
 				BCBC96391C97E92900A7AF9E /* CAT.jpeg in Resources */,
+				8FAD94221C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib in Resources */,
 				07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */,
+				8FAD941E1C995B4000362302 /* BFCIndexViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				074B6E671C95A7EC007E365C /* BFCBaseViewController.swift in Sources */,
+				8FAD94211C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift in Sources */,
 				07648C801C9401B30032009F /* BFCWorkoutDetailViewController.swift in Sources */,
 				07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */,
 				07648C841C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */,
@@ -414,6 +429,7 @@
 				07648C741C9401700032009F /* BFCExerciseDetailViewController.swift in Sources */,
 				07648C881C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */,
 				07648C8F1C9404620032009F /* BFCContainerViewController.swift in Sources */,
+				8FAD941D1C995B4000362302 /* BFCIndexViewController.swift in Sources */,
 				07648C6C1C9401400032009F /* BFCDayPlanExercisesViewController.swift in Sources */,
 				07648C131C93FFFF0032009F /* AppDelegate.swift in Sources */,
 				077E0BA21C95C042004B181C /* BFCWorkoutDetailTableViewCell.swift in Sources */,
