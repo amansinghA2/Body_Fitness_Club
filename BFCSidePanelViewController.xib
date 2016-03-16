@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-ft-MiJ">
-                    <rect key="frame" x="0.0" y="131" width="320" height="437"/>
+                    <rect key="frame" x="0.0" y="131" width="255" height="437"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Ctg-ot-Mo7"/>
@@ -25,7 +25,7 @@
                     </connections>
                 </tableView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="9gV-t7-WX7">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                    <rect key="frame" x="0.0" y="0.0" width="255" height="128"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="GfM-3Y-EJm"/>
                     </constraints>
@@ -35,10 +35,11 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="TJq-ft-MiJ" secondAttribute="bottom" id="5WF-zp-XF0"/>
                 <constraint firstItem="TJq-ft-MiJ" firstAttribute="top" secondItem="9gV-t7-WX7" secondAttribute="bottom" constant="3" id="HZJ-jm-Gjd"/>
+                <constraint firstItem="9gV-t7-WX7" firstAttribute="centerX" secondItem="TJq-ft-MiJ" secondAttribute="centerX" id="LH8-YT-gkD"/>
                 <constraint firstItem="9gV-t7-WX7" firstAttribute="leading" secondItem="TJq-ft-MiJ" secondAttribute="leading" id="PvR-v7-fM0"/>
                 <constraint firstItem="TJq-ft-MiJ" firstAttribute="trailing" secondItem="9gV-t7-WX7" secondAttribute="trailing" id="WAe-5X-Zwo"/>
                 <constraint firstItem="TJq-ft-MiJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YOb-WA-3E1"/>
-                <constraint firstAttribute="trailing" secondItem="9gV-t7-WX7" secondAttribute="trailing" id="ZYn-nw-2CU"/>
+                <constraint firstAttribute="trailing" secondItem="9gV-t7-WX7" secondAttribute="trailing" constant="65" id="ZYn-nw-2CU"/>
                 <constraint firstItem="9gV-t7-WX7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hbq-bk-ERj"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>53E41D56-01D4-4076-A95A-49F6443A9F46</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BFC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E5BEDDD8C7785F9BC93F62EA10DCA42A527C4DFB</key>
+		<string>github.com:amansinghA2/Body_Fitness_Club.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BFC.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E5BEDDD8C7785F9BC93F62EA10DCA42A527C4DFB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:amansinghA2/Body_Fitness_Club.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E5BEDDD8C7785F9BC93F62EA10DCA42A527C4DFB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E5BEDDD8C7785F9BC93F62EA10DCA42A527C4DFB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Body_Fitness_Club</string>
+		</dict>
+	</array>
+</dict>
+</plist>

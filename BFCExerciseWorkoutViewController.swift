@@ -29,8 +29,7 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-      segmentImageLoad()
+        segmentImageLoad()
         
     }
     override func viewWillAppear(animated: Bool) {
