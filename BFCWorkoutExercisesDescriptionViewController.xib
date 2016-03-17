@@ -16,13 +16,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardio_image" translatesAutoresizingMaskIntoConstraints="NO" id="58K-5y-gvK">
-                    <rect key="frame" x="8" y="29" width="297" height="255"/>
+                    <rect key="frame" x="0.0" y="64" width="320" height="272"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="255" id="2RW-Zp-dYa"/>
+                        <constraint firstAttribute="height" constant="272" id="2RW-Zp-dYa"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xa-bi-kMp">
-                    <rect key="frame" x="8" y="332" width="297" height="177"/>
+                    <rect key="frame" x="8" y="367" width="297" height="142"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -30,13 +30,13 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="58K-5y-gvK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="29" id="1Qk-MZ-tdY"/>
+                <constraint firstItem="58K-5y-gvK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="1Qk-MZ-tdY"/>
                 <constraint firstAttribute="bottom" secondItem="6xa-bi-kMp" secondAttribute="bottom" constant="59" id="C2K-vq-8xw"/>
-                <constraint firstItem="6xa-bi-kMp" firstAttribute="top" secondItem="58K-5y-gvK" secondAttribute="bottom" constant="48" id="TYD-0f-KLc"/>
+                <constraint firstItem="6xa-bi-kMp" firstAttribute="top" secondItem="58K-5y-gvK" secondAttribute="bottom" constant="31" id="TYD-0f-KLc"/>
                 <constraint firstItem="6xa-bi-kMp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="U7R-ah-Ark"/>
-                <constraint firstItem="58K-5y-gvK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Z2V-KC-HzH"/>
+                <constraint firstItem="58K-5y-gvK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z2V-KC-HzH"/>
                 <constraint firstAttribute="trailing" secondItem="6xa-bi-kMp" secondAttribute="trailing" constant="15" id="lTD-rM-mTw"/>
-                <constraint firstAttribute="trailing" secondItem="58K-5y-gvK" secondAttribute="trailing" constant="15" id="lV4-aW-wnd"/>
+                <constraint firstAttribute="trailing" secondItem="58K-5y-gvK" secondAttribute="trailing" id="lV4-aW-wnd"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="490" y="336"/>

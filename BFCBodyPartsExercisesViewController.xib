@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="Jdk-tb-STm">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boyworkoutimage" translatesAutoresizingMaskIntoConstraints="NO" id="Jdk-tb-STm">
                     <rect key="frame" x="0.0" y="64" width="320" height="180"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="180" id="ZzH-hC-oe0"/>
@@ -46,6 +46,6 @@
         </view>
     </objects>
     <resources>
-        <image name="GirlCouplesImage" width="1300" height="1072"/>
+        <image name="boyworkoutimage" width="575" height="384"/>
     </resources>
 </document>

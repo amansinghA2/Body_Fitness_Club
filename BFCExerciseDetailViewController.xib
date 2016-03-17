@@ -17,14 +17,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5UH-E8-nOh">
-                    <rect key="frame" x="0.0" y="244" width="320" height="324"/>
+                    <rect key="frame" x="0.0" y="247" width="320" height="321"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="pV1-xQ-aP7"/>
                         <outlet property="delegate" destination="-1" id="dIR-iT-pBj"/>
                     </connections>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoyCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="1t9-hP-d7P">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boyworkoutimage" translatesAutoresizingMaskIntoConstraints="NO" id="1t9-hP-d7P">
                     <rect key="frame" x="0.0" y="64" width="320" height="180"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="180" id="IWz-SN-1XD"/>
@@ -33,19 +33,27 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="5UH-E8-nOh" firstAttribute="top" secondItem="1t9-hP-d7P" secondAttribute="bottom" id="Nzp-t5-jkj"/>
+                <constraint firstItem="5UH-E8-nOh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I7m-aK-QqI"/>
+                <constraint firstItem="5UH-E8-nOh" firstAttribute="top" secondItem="1t9-hP-d7P" secondAttribute="bottom" constant="3" id="Nzp-t5-jkj"/>
                 <constraint firstItem="5UH-E8-nOh" firstAttribute="leading" secondItem="1t9-hP-d7P" secondAttribute="leading" id="b7C-31-nB4"/>
                 <constraint firstItem="1t9-hP-d7P" firstAttribute="trailing" secondItem="5UH-E8-nOh" secondAttribute="trailing" id="cab-ZJ-1ag"/>
+                <constraint firstAttribute="trailing" secondItem="1t9-hP-d7P" secondAttribute="trailing" id="lAP-Cy-kEp"/>
                 <constraint firstItem="1t9-hP-d7P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="nfV-mr-0jj"/>
                 <constraint firstAttribute="trailing" secondItem="5UH-E8-nOh" secondAttribute="trailing" id="noj-KN-vv9"/>
                 <constraint firstAttribute="bottom" secondItem="5UH-E8-nOh" secondAttribute="bottom" id="siR-Rc-IMc"/>
                 <constraint firstItem="1t9-hP-d7P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="suN-le-K4t"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="cab-ZJ-1ag"/>
+                    <exclude reference="b7C-31-nB4"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="545" y="398"/>
         </view>
     </objects>
     <resources>
-        <image name="BoyCouplesImage" width="966" height="1300"/>
+        <image name="boyworkoutimage" width="575" height="384"/>
     </resources>
 </document>

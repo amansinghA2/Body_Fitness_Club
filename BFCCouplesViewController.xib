@@ -17,14 +17,14 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BoyCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="Keq-eg-iek">
+                <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boyworkoutimage" translatesAutoresizingMaskIntoConstraints="NO" id="Keq-eg-iek">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
                     <gestureRecognizers/>
                     <connections>
                         <outletCollection property="gestureRecognizers" destination="fPt-zt-7yr" appends="YES" id="pzK-ml-Uwu"/>
                     </connections>
                 </imageView>
-                <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-aQ-K85">
+                <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girlworkoutimage" translatesAutoresizingMaskIntoConstraints="NO" id="r4L-aQ-K85">
                     <rect key="frame" x="0.0" y="284" width="320" height="284"/>
                     <gestureRecognizers/>
                     <connections>
@@ -58,7 +58,7 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="BoyCouplesImage" width="966" height="1300"/>
-        <image name="GirlCouplesImage" width="1300" height="1072"/>
+        <image name="boyworkoutimage" width="575" height="384"/>
+        <image name="girlworkoutimage" width="1200" height="675"/>
     </resources>
 </document>

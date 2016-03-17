@@ -13,6 +13,7 @@ class BFCExerciseDescriptionViewController: BFCBaseViewController {
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+         BFCUtility.leftArrowNavigationBarButton(self)
         // Do any additional setup after loading the view.
     }
 

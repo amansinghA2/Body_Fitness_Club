@@ -11,6 +11,7 @@
 		0714785C1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0714785A1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.xib */; };
 		0714785F1C9960A40098B607 /* BFCWorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714785D1C9960A40098B607 /* BFCWorkoutDetailViewController.swift */; };
 		071478601C9960A40098B607 /* BFCWorkoutDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0714785E1C9960A40098B607 /* BFCWorkoutDetailViewController.xib */; };
+		071478621C999D850098B607 /* BFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071478611C999D850098B607 /* BFCUtility.swift */; };
 		074B6E671C95A7EC007E365C /* BFCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */; };
 		07648C131C93FFFF0032009F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C121C93FFFF0032009F /* AppDelegate.swift */; };
 		07648C181C93FFFF0032009F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07648C161C93FFFF0032009F /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		0714785A1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCExerciseWorkoutDetailTableViewCell.xib; sourceTree = "<group>"; };
 		0714785D1C9960A40098B607 /* BFCWorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutDetailViewController.swift; sourceTree = "<group>"; };
 		0714785E1C9960A40098B607 /* BFCWorkoutDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailViewController.xib; sourceTree = "<group>"; };
+		071478611C999D850098B607 /* BFCUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCUtility.swift; sourceTree = "<group>"; };
 		074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCBaseViewController.swift; sourceTree = "<group>"; };
 		07648C0F1C93FFFF0032009F /* BFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07648C121C93FFFF0032009F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 			children = (
 				074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */,
 				07648C8E1C9404620032009F /* BFCContainerViewController.swift */,
+				071478611C999D850098B607 /* BFCUtility.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -412,7 +415,6 @@
 			files = (
 				074B6E671C95A7EC007E365C /* BFCBaseViewController.swift in Sources */,
 				8FAD94211C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift in Sources */,
-				07648C801C9401B30032009F /* BFCWorkoutDetailViewController.swift in Sources */,
 				07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */,
 				07648C841C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */,
 				07648C681C94010A0032009F /* BFCCouplesViewController.swift in Sources */,
@@ -429,6 +431,7 @@
 				07648C131C93FFFF0032009F /* AppDelegate.swift in Sources */,
 				07648C7C1C94019F0032009F /* BFCSidePanelViewController.swift in Sources */,
 				07648C8C1C9402030032009F /* MenuData.swift in Sources */,
+				071478621C999D850098B607 /* BFCUtility.swift in Sources */,
 				07648C781C9401840032009F /* BFCExerciseWorkoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

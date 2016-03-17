@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Blt-fh-7Q5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1779" y="787"/>
+            <point key="canvasLocation" x="1567" y="681"/>
         </scene>
         <!--Workout Weekly Schedule View Controller-->
         <scene sceneID="RIE-vi-Rlm">
@@ -94,20 +94,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0T-MN-1Pl" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967" y="38"/>
-        </scene>
-        <!--Workout View Controller-->
-        <scene sceneID="OMt-de-fUc">
-            <objects>
-                <viewController id="47L-ZB-nxg" customClass="BFCWorkoutDetailViewController" customModule="BFC" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Workout View Controller" id="bkO-O6-E5S"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <segue destination="tlD-JJ-cuv" kind="push" identifier="WorkoutWeeklyScheduleIdentifier" id="cbU-rp-L5C"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SB5-Mi-k7p" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1779" y="687"/>
         </scene>
         <!--Day Plan Exercises View Controller-->
         <scene sceneID="7eG-8N-8VA">
@@ -220,7 +206,4 @@
         <image name="Hamburger" width="88" height="88"/>
         <image name="navigationBackArrowButton" width="11" height="18"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="cbU-rp-L5C"/>
-    </inferredMetricsTieBreakers>
 </document>

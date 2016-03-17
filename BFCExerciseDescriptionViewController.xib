@@ -16,9 +16,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardio_image" translatesAutoresizingMaskIntoConstraints="NO" id="dAL-w4-jF6">
-                    <rect key="frame" x="12" y="64" width="297" height="226"/>
+                    <rect key="frame" x="0.0" y="64" width="320" height="244"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="226" id="36a-lf-FC4"/>
+                        <constraint firstAttribute="height" constant="244" id="36a-lf-FC4"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iy1-oO-OEz">
@@ -33,13 +33,13 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="iy1-oO-OEz" firstAttribute="top" secondItem="dAL-w4-jF6" secondAttribute="bottom" constant="48" id="1XF-WJ-YDm"/>
+                <constraint firstItem="iy1-oO-OEz" firstAttribute="top" secondItem="dAL-w4-jF6" secondAttribute="bottom" constant="30" id="1XF-WJ-YDm"/>
                 <constraint firstItem="dAL-w4-jF6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="3Fl-Jb-1g6"/>
-                <constraint firstItem="dAL-w4-jF6" firstAttribute="trailing" secondItem="iy1-oO-OEz" secondAttribute="trailing" id="NUE-dg-Rv6"/>
+                <constraint firstItem="dAL-w4-jF6" firstAttribute="trailing" secondItem="iy1-oO-OEz" secondAttribute="trailing" constant="11" id="NUE-dg-Rv6"/>
                 <constraint firstItem="iy1-oO-OEz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TLn-EQ-QaG"/>
-                <constraint firstItem="iy1-oO-OEz" firstAttribute="leading" secondItem="dAL-w4-jF6" secondAttribute="leading" id="pFV-WN-lLi"/>
+                <constraint firstItem="iy1-oO-OEz" firstAttribute="leading" secondItem="dAL-w4-jF6" secondAttribute="leading" constant="12" id="pFV-WN-lLi"/>
                 <constraint firstAttribute="bottom" secondItem="iy1-oO-OEz" secondAttribute="bottom" constant="53" id="tie-UK-73h"/>
-                <constraint firstItem="dAL-w4-jF6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="xDJ-94-CFX"/>
+                <constraint firstItem="dAL-w4-jF6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xDJ-94-CFX"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="574" y="351"/>

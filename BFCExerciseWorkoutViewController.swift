@@ -60,6 +60,10 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDe
     imageSegue()
     }
     
+    @IBAction func segmentControlAction(sender: AnyObject) {
+        segmentImageLoad()
+    }
+    
     func segmentImageLoad(){
         switch self.segmentControl.selectedSegmentIndex {
         case 0:
@@ -68,10 +72,10 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDe
             cardioImage.image = UIImage(named: "cardio_image")
             strechingImage.image = UIImage(named: "guy-stretching_image")
         case 1:
-            strengthImage.image = UIImage(named: "strength_image")
-            yogaImage.image = UIImage(named: "yoga_image")
-            cardioImage.image = UIImage(named: "cardio_image")
-            strechingImage.image = UIImage(named: "guy-stretching_image")
+            strengthImage.image = UIImage(named: "workout1")
+            yogaImage.image = UIImage(named: "workout2")
+            cardioImage.image = UIImage(named: "workout3")
+            strechingImage.image = UIImage(named: "workout4")
         default:
             print("")
         }

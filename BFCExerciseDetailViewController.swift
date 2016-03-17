@@ -8,12 +8,13 @@
 
 import UIKit
 
-class BFCExerciseDetailViewController: UIViewController {
+class BFCExerciseDetailViewController: BFCBaseViewController {
 
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-     self.tableView.registerNib(UINib(nibName: "BFCExerciseWorkoutDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "ExerciseDetailCell")
+        BFCUtility.leftArrowNavigationBarButton(self)
+        self.tableView.registerNib(UINib(nibName: "BFCExerciseWorkoutDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "ExerciseDetailCell")
         // Do any additional setup after loading the view.
     }
 

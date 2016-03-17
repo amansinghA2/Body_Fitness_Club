@@ -15,19 +15,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAT.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qYb-oN-YiS">
-                        <rect key="frame" x="8" y="10" width="60" height="60"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="60" id="M1L-wj-ZHr"/>
-                            <constraint firstAttribute="height" constant="60" id="jcq-Vd-yvL"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abdominal" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbb-tK-Sbg">
                         <rect key="frame" x="95" y="25" width="189" height="29"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAT.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qYb-oN-YiS">
+                        <rect key="frame" x="8" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="M1L-wj-ZHr"/>
+                            <constraint firstAttribute="height" constant="60" id="jcq-Vd-yvL"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Jbb-tK-Sbg" secondAttribute="trailing" constant="36" id="DhI-gP-Eli"/>

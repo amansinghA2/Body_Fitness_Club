@@ -8,12 +8,12 @@
 
 import UIKit
 
-class BFCIndexViewController: UIViewController {
+class BFCIndexViewController: BFCBaseViewController {
 
     @IBOutlet weak var customizeWorkoutTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+     BFCUtility.leftArrowNavigationBarButton(self)
         // Do any additional setup after loading the view.
     }
 

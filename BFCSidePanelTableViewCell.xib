@@ -15,34 +15,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="331" height="59"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAT.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-FT-uMu">
-                        <rect key="frame" x="8" y="8" width="48" height="43"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAT.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-FT-uMu">
+                        <rect key="frame" x="8" y="8" width="45" height="45"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="48" id="3DV-TD-jZ0"/>
+                            <constraint firstAttribute="width" constant="45" id="3DV-TD-jZ0"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge4-Uc-smm">
                         <rect key="frame" x="64" y="8" width="259" height="43"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="GBu-FT-uMu" firstAttribute="top" secondItem="Ge4-Uc-smm" secondAttribute="top" id="60v-nR-xGD"/>
                     <constraint firstItem="Ge4-Uc-smm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9Bp-Z7-TQH"/>
-                    <constraint firstItem="GBu-FT-uMu" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="FnT-5u-pyb"/>
+                    <constraint firstItem="GBu-FT-uMu" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="2" id="FnT-5u-pyb"/>
                     <constraint firstItem="Ge4-Uc-smm" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="InJ-vF-zDF"/>
                     <constraint firstItem="GBu-FT-uMu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Kjf-hj-I9d"/>
-                    <constraint firstItem="GBu-FT-uMu" firstAttribute="bottom" secondItem="Ge4-Uc-smm" secondAttribute="bottom" id="VxW-Qj-YY0"/>
-                    <constraint firstItem="Ge4-Uc-smm" firstAttribute="leading" secondItem="GBu-FT-uMu" secondAttribute="trailing" constant="8" symbolic="YES" id="vMO-co-L3A"/>
+                    <constraint firstItem="GBu-FT-uMu" firstAttribute="bottom" secondItem="Ge4-Uc-smm" secondAttribute="bottom" constant="2" id="VxW-Qj-YY0"/>
+                    <constraint firstItem="Ge4-Uc-smm" firstAttribute="leading" secondItem="GBu-FT-uMu" secondAttribute="trailing" constant="11" id="vMO-co-L3A"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.71738195419999995" blue="0.4575701499" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="cellImageView" destination="GBu-FT-uMu" id="QM9-Xf-dE4"/>
                 <outlet property="cellLabelView" destination="Ge4-Uc-smm" id="cmj-6o-IWC"/>
             </connections>
-            <point key="canvasLocation" x="435.5" y="331"/>
+            <point key="canvasLocation" x="574.5" y="347"/>
         </tableViewCell>
     </objects>
     <resources>

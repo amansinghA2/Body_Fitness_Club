@@ -24,7 +24,7 @@
                         <outlet property="delegate" destination="-1" id="bUN-BY-EaX"/>
                     </connections>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GirlCouplesImage" translatesAutoresizingMaskIntoConstraints="NO" id="pN1-Dw-egj">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girlworkoutimage" translatesAutoresizingMaskIntoConstraints="NO" id="pN1-Dw-egj">
                     <rect key="frame" x="0.0" y="64" width="320" height="180"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="180" id="Sp8-EG-hOr"/>
@@ -56,6 +56,6 @@
         </view>
     </objects>
     <resources>
-        <image name="GirlCouplesImage" width="1300" height="1072"/>
+        <image name="girlworkoutimage" width="1200" height="675"/>
     </resources>
 </document>

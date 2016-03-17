@@ -21,4 +21,8 @@ class BFCBaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func popToRoot(sender:UIBarButtonItem){
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
 }

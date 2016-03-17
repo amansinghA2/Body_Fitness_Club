@@ -8,11 +8,12 @@
 
 import UIKit
 
-class BFCWorkoutWeeklyScheduleViewController: UIViewController {
+class BFCWorkoutWeeklyScheduleViewController: BFCBaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+         BFCUtility.leftArrowNavigationBarButton(self)
   self.tableView.registerNib(UINib(nibName: "BFCExerciseWorkoutDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "ExerciseDetailCell")
         // Do any additional setup after loading the view.
     }
