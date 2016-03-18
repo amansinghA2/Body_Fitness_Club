@@ -10,10 +10,11 @@ import UIKit
 
 class BFCCouplesViewController: BFCBaseViewController , UIApplicationDelegate {
     
-      var window: UIWindow?
+    var window: UIWindow?
     
     @IBOutlet weak var girlImageView: UIImageView!
     @IBOutlet weak var boyImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          self.navigationController?.navigationBarHidden = true
@@ -26,10 +27,11 @@ class BFCCouplesViewController: BFCBaseViewController , UIApplicationDelegate {
     }
     
     @IBAction func boyImageAction(sender: AnyObject) {
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window = UIWindow()
         let containerViewController = ContainerViewController()
         window!.rootViewController = containerViewController
-        window!.makeKeyAndVisible()
+        self.window!.makeKeyAndVisible()
+
     }
     
     @IBAction func girlImageAction(sender: AnyObject) {

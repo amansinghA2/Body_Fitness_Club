@@ -18,7 +18,7 @@ class BFCSidePanelTableViewCell: UITableViewCell {
         // Initialization code
     }
     func configureForData(menuData: MenuData) {
-       cellLabelView.text = menuData.title
+        cellLabelView.text = menuData.title
         cellImageView.image = menuData.image
     }
     override func setSelected(selected: Bool, animated: Bool) {

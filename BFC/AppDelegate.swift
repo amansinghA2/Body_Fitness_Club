@@ -17,9 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
       
-        
+//      changeRootViewController(self)
         UINavigationBar.appearance().backgroundColor = UIColor.cyanColor()
-        UIBarButtonItem.appearance().tintColor = UIColor.magentaColor()
         //UINavigationBar.appearance().titleTextAttributes = [UITextAttributeTextColor: UIColor.blueColor()]
         UITabBar.appearance().backgroundColor = UIColor.yellowColor();
         return true

@@ -16,7 +16,13 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwQ-h2-iZw">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girlworkoutimage" translatesAutoresizingMaskIntoConstraints="NO" id="pN1-Dw-egj">
+                    <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="Sp8-EG-hOr"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwQ-h2-iZw">
                     <rect key="frame" x="0.0" y="246" width="320" height="322"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -24,12 +30,6 @@
                         <outlet property="delegate" destination="-1" id="bUN-BY-EaX"/>
                     </connections>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="girlworkoutimage" translatesAutoresizingMaskIntoConstraints="NO" id="pN1-Dw-egj">
-                    <rect key="frame" x="0.0" y="64" width="320" height="180"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="180" id="Sp8-EG-hOr"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

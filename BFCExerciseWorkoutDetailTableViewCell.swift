@@ -15,6 +15,8 @@ class BFCExerciseWorkoutDetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.exerciseDetailImage.layer.masksToBounds = true
+        self.exerciseDetailImage.layer.cornerRadius = CGRectGetWidth(self.exerciseDetailImage.frame)/25.0
         // Initialization code
     }
 

@@ -14,12 +14,13 @@ protocol BFCExerciseWorkoutViewControllerDelegate {
     
 }
 class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDelegate {
-     var window: UIWindow?
-    var delegate:BFCExerciseWorkoutViewControllerDelegate?
+    var window: UIWindow?
+    var delegate1:BFCExerciseWorkoutViewControllerDelegate?
     
     @IBAction func menuButton(sender: AnyObject) {
-        delegate?.toggleLeftPanel()
+        delegate1?.toggleLeftPanel()
     }
+    
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
     @IBOutlet weak var strengthImage: UIImageView!
@@ -30,8 +31,9 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDe
     override func viewDidLoad() {
         super.viewDidLoad()
         segmentImageLoad()
-        
+        imageOpacity()
     }
+    
     override func viewWillAppear(animated: Bool) {
    
     }
@@ -40,10 +42,7 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDe
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    
-    
     @IBAction func strengthImageAction(sender: AnyObject) {
     imageSegue()
     }
@@ -90,5 +89,12 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDe
         default:
             print("")
       }
+    }
+    
+    func imageOpacity(){
+         self.strengthImage.layer.shadowOpacity = 1.0
+         self.yogaImage.layer.shadowOpacity = 1.0
+         self.cardioImage.layer.shadowOpacity = 1.0
+         self.strechingImage.layer.shadowOpacity = 1.0
     }
 }

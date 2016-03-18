@@ -14,7 +14,7 @@ class BFCUtility: NSObject {
         uvc.navigationController!.setNavigationBarHidden(false, animated:true)
         let leftBackButton:UIButton = UIButton(type: UIButtonType.Custom) as UIButton
         leftBackButton.addTarget(uvc, action: "popToRoot:", forControlEvents: UIControlEvents.TouchUpInside)
-        leftBackButton.tintColor=UIColor.whiteColor()
+        leftBackButton.tintColor=UIColor.blackColor()
         let backImage = UIImage(named: "navigationBackArrowButton")
         leftBackButton.setImage(backImage, forState: UIControlState.Normal)
         leftBackButton.sizeToFit()
