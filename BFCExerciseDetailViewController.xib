@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BFCExerciseDetailViewController" customModule="BFC" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="5UH-E8-nOh" id="8A3-B3-cGD"/>
+                <outlet property="tableView" destination="5UH-E8-nOh" id="WIK-9n-8aw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="4RZ-1K-Cv4"/>
             </connections>
         </placeholder>

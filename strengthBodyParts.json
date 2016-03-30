@@ -1,0 +1,32 @@
+{
+    "strengthBodyParts1":[
+            {
+            "bodyPartsTitle": "Abdominal",
+            "iconImage": "cardio_image",
+            },
+            {
+            "bodyPartsTitle": "Back",
+            "iconImage": "guy-stretching_image",
+            },
+            {
+            "bodyPartsTitle": "Biceps",
+            "iconImage": "girlworkoutimage",
+            },
+            {
+            "bodyPartsTitle": "Chest",
+            "iconImage": "workout2",
+            },
+            {
+            "bodyPartsTitle": "Legs",
+            "iconImage": "workout4",
+            },
+            {
+            "bodyPartsTitle": "Shoulders",
+            "iconImage": "yoga_image",
+            },
+            {
+            "bodyPartsTitle": "Triceps",
+            "iconImage": "LanguageIcon",
+            }
+            ]
+}

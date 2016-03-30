@@ -31,7 +31,6 @@ class BFCCouplesViewController: BFCBaseViewController , UIApplicationDelegate {
         let containerViewController = ContainerViewController()
         window!.rootViewController = containerViewController
         self.window!.makeKeyAndVisible()
-
     }
     
     @IBAction func girlImageAction(sender: AnyObject) {

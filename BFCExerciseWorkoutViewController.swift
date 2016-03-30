@@ -60,7 +60,7 @@ class BFCExerciseWorkoutViewController: BFCBaseViewController  , UIApplicationDe
     }
     
     @IBAction func segmentControlAction(sender: AnyObject) {
-        segmentImageLoad()
+    segmentImageLoad()
     }
     
     func segmentImageLoad(){

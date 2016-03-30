@@ -13,6 +13,23 @@ class BFCExerciseWorkoutDetailTableViewCell: UITableViewCell {
     @IBOutlet var exerciseDetailImage: UIImageView!
     @IBOutlet var exerciseDetailLabel: UILabel!
     
+    var bodyParts:StrengthBodyParts!{
+        didSet{
+            bindModelToViews()
+        }
+    }
+    
+    func bindModelToViews(){
+        if let name = bodyParts.bodyName {
+            self.exerciseDetailLabel.text = name
+        }
+    
+        if let image = bodyParts.bodyImage {
+            self.exerciseDetailImage.image = UIImage(named: image)
+        }
+    
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.exerciseDetailImage.layer.masksToBounds = true

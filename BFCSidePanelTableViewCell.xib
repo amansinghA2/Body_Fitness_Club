@@ -15,12 +15,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAT.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-FT-uMu">
-                        <rect key="frame" x="8" y="8" width="45" height="45"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="45" id="3DV-TD-jZ0"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge4-Uc-smm">
                         <rect key="frame" x="64" y="8" width="259" height="43"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
@@ -34,6 +28,12 @@
                             <constraint firstAttribute="height" constant="2" id="HCs-dh-w0x"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAT.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-FT-uMu">
+                        <rect key="frame" x="8" y="8" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="3DV-TD-jZ0"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="GBu-FT-uMu" firstAttribute="top" secondItem="Ge4-Uc-smm" secondAttribute="top" id="60v-nR-xGD"/>

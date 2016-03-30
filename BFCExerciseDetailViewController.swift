@@ -7,21 +7,58 @@
 //
 
 import UIKit
+import CoreData
 
 class BFCExerciseDetailViewController: BFCBaseViewController {
-
     @IBOutlet var tableView: UITableView!
+    
+    var bodyPartsArray = [NSManagedObject]()
+    
+//    var bodyParts:StrengthBodyParts!{
+//        didSet{
+//            
+//        }
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         BFCUtility.leftArrowNavigationBarButton(self)
         self.tableView.registerNib(UINib(nibName: "BFCExerciseWorkoutDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "ExerciseDetailCell")
         // Do any additional setup after loading the view.
+        getBodyPartsList()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func getBodyPartsList(){
+       DataManager.strengthBodyParts { (isSuccessful, error) -> Void in
+        if(isSuccessful){
+          //  self.bodyPartsArray = bodyPart as! [NSManagedObject]
+            self.fetchBodyPartsList()
+        }else{
+            print(error)
+        }
+        }
+    }
+    
+    func fetchBodyPartsList(){
+        let dataStack = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "StrengthBodyParts")
+        
+        let sortDescriptor = NSSortDescriptor(key: "bodyName", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+       
+        do {
+            let results = try dataStack.executeFetchRequest(fetchRequest) as AnyObject
+            self.bodyPartsArray = results as! [NSManagedObject]
+        } catch {
+            print("Error fetching data")
+        }
+    }
+    
 }
 
 extension BFCExerciseDetailViewController: UITableViewDataSource , UITableViewDelegate {
@@ -31,11 +68,16 @@ extension BFCExerciseDetailViewController: UITableViewDataSource , UITableViewDe
         }
         
         func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 10
+            return self.bodyPartsArray.count
         }
         
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCellWithIdentifier("ExerciseDetailCell" , forIndexPath: indexPath) as! BFCExerciseWorkoutDetailTableViewCell
+            
+//            cell.exerciseDetailLabel.text = bodyPartsArray[indexPath.row] as? String
+            let bodyParts = bodyPartsArray[indexPath.row] as! StrengthBodyParts
+            cell.bodyParts = bodyParts
+            
             return cell
         }
         
@@ -47,6 +89,7 @@ extension BFCExerciseDetailViewController: UITableViewDataSource , UITableViewDe
             return UITableViewAutomaticDimension
             }
     }
+
     /*
     // MARK: - Navigation
 

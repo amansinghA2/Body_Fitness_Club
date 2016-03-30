@@ -16,20 +16,20 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-ft-MiJ">
-                    <rect key="frame" x="0.0" y="128" width="320" height="442"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="Ctg-ot-Mo7"/>
-                        <outlet property="delegate" destination="-1" id="ypT-3p-dBr"/>
-                    </connections>
-                </tableView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardio_image" translatesAutoresizingMaskIntoConstraints="NO" id="9gV-t7-WX7">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="GfM-3Y-EJm"/>
                     </constraints>
                 </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TJq-ft-MiJ">
+                    <rect key="frame" x="0.0" y="126" width="320" height="442"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ctg-ot-Mo7"/>
+                        <outlet property="delegate" destination="-1" id="ypT-3p-dBr"/>
+                    </connections>
+                </tableView>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="TJq-ft-MiJ" secondAttribute="bottom" constant="-2" id="5WF-zp-XF0"/>

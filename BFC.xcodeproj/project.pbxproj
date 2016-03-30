@@ -7,11 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0712EE451CA9036C00050CF2 /* strengthBodyParts.json in Resources */ = {isa = PBXBuildFile; fileRef = 0712EE441CA9036C00050CF2 /* strengthBodyParts.json */; };
+		0712EE471CA9148400050CF2 /* strengthBodyPartsExercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 0712EE461CA9148400050CF2 /* strengthBodyPartsExercises.json */; };
+		0712EE4A1CA91C5D00050CF2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE491CA91C5D00050CF2 /* DataManager.swift */; };
+		0712EE4C1CA91C8200050CF2 /* MockDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE4B1CA91C8100050CF2 /* MockDataManger.swift */; };
+		0712EE4E1CA91CE800050CF2 /* ClientJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE4D1CA91CE800050CF2 /* ClientJSONMapper.swift */; };
+		0712EE551CA9201D00050CF2 /* ExerciseDesc+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE4F1CA9201C00050CF2 /* ExerciseDesc+CoreDataProperties.swift */; };
+		0712EE561CA9201D00050CF2 /* ExerciseDesc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE501CA9201C00050CF2 /* ExerciseDesc.swift */; };
+		0712EE571CA9201D00050CF2 /* StrengthBodyParts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE511CA9201C00050CF2 /* StrengthBodyParts+CoreDataProperties.swift */; };
+		0712EE581CA9201D00050CF2 /* StrengthBodyParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE521CA9201C00050CF2 /* StrengthBodyParts.swift */; };
+		0712EE591CA9201D00050CF2 /* ExercisesBodyPartsExercises+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE531CA9201C00050CF2 /* ExercisesBodyPartsExercises+CoreDataProperties.swift */; };
+		0712EE5A1CA9201D00050CF2 /* ExercisesBodyPartsExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0712EE541CA9201C00050CF2 /* ExercisesBodyPartsExercises.swift */; };
 		0714785B1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071478591C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.swift */; };
 		0714785C1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0714785A1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.xib */; };
 		0714785F1C9960A40098B607 /* BFCWorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714785D1C9960A40098B607 /* BFCWorkoutDetailViewController.swift */; };
 		071478601C9960A40098B607 /* BFCWorkoutDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0714785E1C9960A40098B607 /* BFCWorkoutDetailViewController.xib */; };
 		071478621C999D850098B607 /* BFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071478611C999D850098B607 /* BFCUtility.swift */; };
+		072EB5311CA018C200CBDEDC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EB5261CA018C200CBDEDC /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072EB5321CA018C200CBDEDC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EB5281CA018C200CBDEDC /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072EB5331CA018C200CBDEDC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EB52A1CA018C200CBDEDC /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072EB5341CA018C200CBDEDC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EB52C1CA018C200CBDEDC /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072EB5351CA018C200CBDEDC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EB52F1CA018C200CBDEDC /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		072EB5361CA018C200CBDEDC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 072EB5301CA018C200CBDEDC /* Info.plist */; };
+		072EB5381CA01CA800CBDEDC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 072EB5371CA01CA800CBDEDC /* libsqlite3.0.tbd */; };
 		074B6E671C95A7EC007E365C /* BFCBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */; };
 		075B72151C9AE91D0065A115 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075B72141C9AE91D0065A115 /* CustomNavigationController.swift */; };
 		07648C131C93FFFF0032009F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07648C121C93FFFF0032009F /* AppDelegate.swift */; };
@@ -47,8 +65,6 @@
 		8FAD941E1C995B4000362302 /* BFCIndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FAD941C1C995B4000362302 /* BFCIndexViewController.xib */; };
 		8FAD94211C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAD941F1C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift */; };
 		8FAD94221C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FAD94201C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib */; };
-		BCBC96391C97E92900A7AF9E /* CAT.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC96381C97E92900A7AF9E /* CAT.jpeg */; };
-		BCBC963B1C97ECD200A7AF9E /* builder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BCBC963A1C97ECD200A7AF9E /* builder.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,11 +85,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0712EE441CA9036C00050CF2 /* strengthBodyParts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = strengthBodyParts.json; sourceTree = "<group>"; };
+		0712EE461CA9148400050CF2 /* strengthBodyPartsExercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = strengthBodyPartsExercises.json; sourceTree = "<group>"; };
+		0712EE491CA91C5D00050CF2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0712EE4B1CA91C8100050CF2 /* MockDataManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDataManger.swift; sourceTree = "<group>"; };
+		0712EE4D1CA91CE800050CF2 /* ClientJSONMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientJSONMapper.swift; sourceTree = "<group>"; };
+		0712EE4F1CA9201C00050CF2 /* ExerciseDesc+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExerciseDesc+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0712EE501CA9201C00050CF2 /* ExerciseDesc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseDesc.swift; sourceTree = "<group>"; };
+		0712EE511CA9201C00050CF2 /* StrengthBodyParts+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StrengthBodyParts+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0712EE521CA9201C00050CF2 /* StrengthBodyParts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrengthBodyParts.swift; sourceTree = "<group>"; };
+		0712EE531CA9201C00050CF2 /* ExercisesBodyPartsExercises+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExercisesBodyPartsExercises+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0712EE541CA9201C00050CF2 /* ExercisesBodyPartsExercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesBodyPartsExercises.swift; sourceTree = "<group>"; };
 		071478591C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCExerciseWorkoutDetailTableViewCell.swift; sourceTree = "<group>"; };
 		0714785A1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCExerciseWorkoutDetailTableViewCell.xib; sourceTree = "<group>"; };
 		0714785D1C9960A40098B607 /* BFCWorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutDetailViewController.swift; sourceTree = "<group>"; };
 		0714785E1C9960A40098B607 /* BFCWorkoutDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailViewController.xib; sourceTree = "<group>"; };
 		071478611C999D850098B607 /* BFCUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCUtility.swift; sourceTree = "<group>"; };
+		072EB5251CA018C200CBDEDC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		072EB5261CA018C200CBDEDC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		072EB5271CA018C200CBDEDC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		072EB5281CA018C200CBDEDC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		072EB5291CA018C200CBDEDC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		072EB52A1CA018C200CBDEDC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		072EB52B1CA018C200CBDEDC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		072EB52C1CA018C200CBDEDC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		072EB52D1CA018C200CBDEDC /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		072EB52E1CA018C200CBDEDC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		072EB52F1CA018C200CBDEDC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		072EB5301CA018C200CBDEDC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		072EB5371CA01CA800CBDEDC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		072EB5391CA029B300CBDEDC /* BFC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BFC-Bridging-Header.h"; sourceTree = "<group>"; };
 		074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCBaseViewController.swift; sourceTree = "<group>"; };
 		075B72141C9AE91D0065A115 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		07648C0F1C93FFFF0032009F /* BFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,8 +156,6 @@
 		8FAD941C1C995B4000362302 /* BFCIndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCIndexViewController.xib; sourceTree = "<group>"; };
 		8FAD941F1C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCCostumizeWorkoutTableViewCell.swift; sourceTree = "<group>"; };
 		8FAD94201C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCCostumizeWorkoutTableViewCell.xib; sourceTree = "<group>"; };
-		BCBC96381C97E92900A7AF9E /* CAT.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CAT.jpeg; sourceTree = "<group>"; };
-		BCBC963A1C97ECD200A7AF9E /* builder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = builder.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072EB5381CA01CA800CBDEDC /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,17 +184,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		074B6E651C95A7C8007E365C /* New Group */ = {
+		0712EE5B1CA920A200050CF2 /* ClientJSON */ = {
 			isa = PBXGroup;
 			children = (
+				0712EE461CA9148400050CF2 /* strengthBodyPartsExercises.json */,
+				0712EE441CA9036C00050CF2 /* strengthBodyParts.json */,
 			);
-			name = "New Group";
+			name = ClientJSON;
+			sourceTree = "<group>";
+		};
+		0718A6E31CA285DF0018210A /* ClientAPI */ = {
+			isa = PBXGroup;
+			children = (
+				0712EE491CA91C5D00050CF2 /* DataManager.swift */,
+				0712EE4B1CA91C8100050CF2 /* MockDataManger.swift */,
+				0712EE4D1CA91CE800050CF2 /* ClientJSONMapper.swift */,
+			);
+			name = ClientAPI;
+			sourceTree = "<group>";
+		};
+		072EB5241CA018C200CBDEDC /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				072EB5251CA018C200CBDEDC /* FMDatabase.h */,
+				072EB5261CA018C200CBDEDC /* FMDatabase.m */,
+				072EB5271CA018C200CBDEDC /* FMDatabaseAdditions.h */,
+				072EB5281CA018C200CBDEDC /* FMDatabaseAdditions.m */,
+				072EB5291CA018C200CBDEDC /* FMDatabasePool.h */,
+				072EB52A1CA018C200CBDEDC /* FMDatabasePool.m */,
+				072EB52B1CA018C200CBDEDC /* FMDatabaseQueue.h */,
+				072EB52C1CA018C200CBDEDC /* FMDatabaseQueue.m */,
+				072EB52D1CA018C200CBDEDC /* FMDB.h */,
+				072EB52E1CA018C200CBDEDC /* FMResultSet.h */,
+				072EB52F1CA018C200CBDEDC /* FMResultSet.m */,
+				072EB5301CA018C200CBDEDC /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		074B6E651C95A7C8007E365C /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				072EB5391CA029B300CBDEDC /* BFC-Bridging-Header.h */,
+				072EB5371CA01CA800CBDEDC /* libsqlite3.0.tbd */,
+				072EB5241CA018C200CBDEDC /* fmdb */,
+			);
+			name = SQLite;
 			sourceTree = "<group>";
 		};
 		07648C061C93FFFF0032009F = {
 			isa = PBXGroup;
 			children = (
-				074B6E651C95A7C8007E365C /* New Group */,
+				0718A6E31CA285DF0018210A /* ClientAPI */,
+				0712EE5B1CA920A200050CF2 /* ClientJSON */,
+				074B6E651C95A7C8007E365C /* SQLite */,
 				07CA307B1C940D4000D7A423 /* CellXibs */,
 				07648C8D1C94043C0032009F /* Components */,
 				07648C8A1C9401E70032009F /* Model */,
@@ -182,11 +265,8 @@
 				07648C121C93FFFF0032009F /* AppDelegate.swift */,
 				07648C161C93FFFF0032009F /* Main.storyboard */,
 				07648C1C1C93FFFF0032009F /* Assets.xcassets */,
-				BCBC96381C97E92900A7AF9E /* CAT.jpeg */,
-				BCBC963A1C97ECD200A7AF9E /* builder.jpeg */,
 				07648C1E1C93FFFF0032009F /* LaunchScreen.storyboard */,
 				07648C211C93FFFF0032009F /* Info.plist */,
-				07648C191C93FFFF0032009F /* BFC.xcdatamodeld */,
 			);
 			path = BFC;
 			sourceTree = "<group>";
@@ -243,7 +323,14 @@
 		07648C8A1C9401E70032009F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0712EE4F1CA9201C00050CF2 /* ExerciseDesc+CoreDataProperties.swift */,
+				0712EE501CA9201C00050CF2 /* ExerciseDesc.swift */,
+				0712EE511CA9201C00050CF2 /* StrengthBodyParts+CoreDataProperties.swift */,
+				0712EE521CA9201C00050CF2 /* StrengthBodyParts.swift */,
+				0712EE531CA9201C00050CF2 /* ExercisesBodyPartsExercises+CoreDataProperties.swift */,
+				0712EE541CA9201C00050CF2 /* ExercisesBodyPartsExercises.swift */,
 				07648C8B1C9402030032009F /* MenuData.swift */,
+				07648C191C93FFFF0032009F /* BFC.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -373,14 +460,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCBC963B1C97ECD200A7AF9E /* builder.jpeg in Resources */,
+				0712EE471CA9148400050CF2 /* strengthBodyPartsExercises.json in Resources */,
 				07648C201C93FFFF0032009F /* LaunchScreen.storyboard in Resources */,
 				07648C751C9401700032009F /* BFCExerciseDetailViewController.xib in Resources */,
 				07648C791C9401840032009F /* BFCExerciseWorkoutViewController.xib in Resources */,
+				0712EE451CA9036C00050CF2 /* strengthBodyParts.json in Resources */,
 				07648C891C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.xib in Resources */,
 				0714785C1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.xib in Resources */,
 				07648C651C9400E00032009F /* BFCBodyPartsExercisesViewController.xib in Resources */,
 				07648C6D1C9401400032009F /* BFCDayPlanExercisesViewController.xib in Resources */,
+				072EB5361CA018C200CBDEDC /* Info.plist in Resources */,
 				07648C711C9401580032009F /* BFCExerciseDescriptionViewController.xib in Resources */,
 				07648C1D1C93FFFF0032009F /* Assets.xcassets in Resources */,
 				07648C691C94010A0032009F /* BFCCouplesViewController.xib in Resources */,
@@ -388,7 +477,6 @@
 				071478601C9960A40098B607 /* BFCWorkoutDetailViewController.xib in Resources */,
 				07648C7D1C94019F0032009F /* BFCSidePanelViewController.xib in Resources */,
 				07648C181C93FFFF0032009F /* Main.storyboard in Resources */,
-				BCBC96391C97E92900A7AF9E /* CAT.jpeg in Resources */,
 				8FAD94221C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.xib in Resources */,
 				07FD2CAE1C945DE700F9C87F /* BFCSidePanelTableViewCell.xib in Resources */,
 				8FAD941E1C995B4000362302 /* BFCIndexViewController.xib in Resources */,
@@ -422,12 +510,25 @@
 				07648C841C9401C90032009F /* BFCWorkoutExercisesDescriptionViewController.swift in Sources */,
 				07648C681C94010A0032009F /* BFCCouplesViewController.swift in Sources */,
 				07648C701C9401580032009F /* BFCExerciseDescriptionViewController.swift in Sources */,
+				0712EE581CA9201D00050CF2 /* StrengthBodyParts.swift in Sources */,
+				0712EE4E1CA91CE800050CF2 /* ClientJSONMapper.swift in Sources */,
+				0712EE5A1CA9201D00050CF2 /* ExercisesBodyPartsExercises.swift in Sources */,
+				0712EE571CA9201D00050CF2 /* StrengthBodyParts+CoreDataProperties.swift in Sources */,
+				072EB5351CA018C200CBDEDC /* FMResultSet.m in Sources */,
 				075B72151C9AE91D0065A115 /* CustomNavigationController.swift in Sources */,
 				07648C1B1C93FFFF0032009F /* BFC.xcdatamodeld in Sources */,
+				0712EE591CA9201D00050CF2 /* ExercisesBodyPartsExercises+CoreDataProperties.swift in Sources */,
 				07648C641C9400E00032009F /* BFCBodyPartsExercisesViewController.swift in Sources */,
+				072EB5311CA018C200CBDEDC /* FMDatabase.m in Sources */,
+				072EB5341CA018C200CBDEDC /* FMDatabaseQueue.m in Sources */,
+				072EB5321CA018C200CBDEDC /* FMDatabaseAdditions.m in Sources */,
+				0712EE551CA9201D00050CF2 /* ExerciseDesc+CoreDataProperties.swift in Sources */,
 				0714785B1C9935AA0098B607 /* BFCExerciseWorkoutDetailTableViewCell.swift in Sources */,
 				07648C741C9401700032009F /* BFCExerciseDetailViewController.swift in Sources */,
+				072EB5331CA018C200CBDEDC /* FMDatabasePool.m in Sources */,
+				0712EE561CA9201D00050CF2 /* ExerciseDesc.swift in Sources */,
 				07648C881C9401E10032009F /* BFCWorkoutWeeklyScheduleViewController.swift in Sources */,
+				0712EE4C1CA91C8200050CF2 /* MockDataManger.swift in Sources */,
 				07648C8F1C9404620032009F /* BFCContainerViewController.swift in Sources */,
 				8FAD941D1C995B4000362302 /* BFCIndexViewController.swift in Sources */,
 				07648C6C1C9401400032009F /* BFCDayPlanExercisesViewController.swift in Sources */,
@@ -436,6 +537,7 @@
 				07648C7C1C94019F0032009F /* BFCSidePanelViewController.swift in Sources */,
 				07648C8C1C9402030032009F /* MenuData.swift in Sources */,
 				071478621C999D850098B607 /* BFCUtility.swift in Sources */,
+				0712EE4A1CA91C5D00050CF2 /* DataManager.swift in Sources */,
 				07648C781C9401840032009F /* BFCExerciseWorkoutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +684,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Aman-PC.BFC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BFC-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -593,6 +696,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Aman-PC.BFC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BFC-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -692,7 +796,8 @@
 				07648C1A1C93FFFF0032009F /* BFC.xcdatamodel */,
 			);
 			currentVersion = 07648C1A1C93FFFF0032009F /* BFC.xcdatamodel */;
-			path = BFC.xcdatamodeld;
+			name = BFC.xcdatamodeld;
+			path = BFC/BFC.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

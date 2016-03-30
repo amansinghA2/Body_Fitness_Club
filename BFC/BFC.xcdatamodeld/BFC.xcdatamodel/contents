@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Automatic">
-    <elements/>
+    <entity name="ExerciseDesc" representedClassName=".ExerciseDesc" syncable="YES">
+        <attribute name="bodyPartsExerciseDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image4" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ExercisesBodyPartsExercises" representedClassName=".ExercisesBodyPartsExercises" syncable="YES">
+        <attribute name="bodyPartsExerciseTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="exerciseImage" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StrengthBodyParts" representedClassName=".StrengthBodyParts" syncable="YES">
+        <attribute name="bodyImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bodyName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="bodyPartExercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ExercisesBodyPartsExercises" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="StrengthBodyParts" positionX="-495" positionY="-144" width="128" height="90"/>
+        <element name="ExerciseDesc" positionX="-36" positionY="9" width="128" height="120"/>
+        <element name="ExercisesBodyPartsExercises" positionX="-225" positionY="-153" width="128" height="75"/>
+    </elements>
 </model>

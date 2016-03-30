@@ -22,13 +22,14 @@ class BFCSidePanelViewController: BFCBaseViewController {
             static let AnimalCell = "SideMenuCell"
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewCell.registerNib(UINib(nibName:"BFCSidePanelTableViewCell", bundle: nil), forCellReuseIdentifier: "SideMenuCell")
         tableViewCell.reloadData()
         
-        
     }
+    
     func changeLanguage() {
         let actionSheet = UIAlertController(title: "Edit", message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         actionSheet.addAction(UIAlertAction(title: "Arabic", style: UIAlertActionStyle.Default, handler:  {(UIAlertAction) -> Void in
@@ -113,7 +114,6 @@ class BFCSidePanelViewController: BFCBaseViewController {
                     
                 case 2:
                     changeLanguage()
-                    
                 case 3:
                     //                    rate us
                     print("")

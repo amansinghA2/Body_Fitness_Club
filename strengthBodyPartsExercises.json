@@ -1,0 +1,85 @@
+{
+    "strengthBodyPartsExercises":[
+                         {
+                         "bodyPartsExerciseTitle": "Ab Roller",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                            "largeIconImage1": "guy-stretching_image",
+                                            "largeIconImage2": "cardio_image",
+                                            }] ,
+                         "bodyPartsExerciseDesc": "Ab Roller"
+                         },
+                         {
+                         "bodyPartsExerciseTitle": "Bicycle Crunches",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                                      "largeIconImage1": "guy-stretching_image",
+                                                      "largeIconImage2": "cardio_image",
+                                                      }] ,
+                        "bodyPartsExerciseDesc": "Ab Roller"
+                         },
+                         {
+                         "bodyPartsExerciseTitle": "Bottoms Up Standing",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                                      "largeIconImage1": "guy-stretching_image",
+                                                      "largeIconImage2": "cardio_image",
+                                                      }] ,
+                         "bodyPartsExerciseDesc": "Ab Roller"
+                         },
+                         {
+                         "bodyPartsExerciseTitle": "Crunches",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                                      "largeIconImage1": "guy-stretching_image",
+                                                      "largeIconImage2": "cardio_image",
+                                                      }] ,
+                        "bodyPartsExerciseDesc": "Ab Roller"
+                         },
+                         {
+                         "bodyPartsExerciseTitle": "Decline Crunches",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                                      "largeIconImage1": "guy-stretching_image",
+                                                      "largeIconImage2": "cardio_image",
+                                                      }] ,
+                         "bodyPartsExerciseDesc": "Ab Roller"
+                         },
+                         {
+                         "bodyPartsExerciseTitle": "Hanging Upside",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                            "largeIconImage1": "guy-stretching_image",
+                                            "largeIconImage2": "cardio_image",
+                                            }] ,
+                         "bodyPartsExerciseDesc": "Ab Roller"
+                         },
+                         {
+                         "bodyPartsExerciseTitle": "Toe Toucher Crunches",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                            "largeIconImage1": "guy-stretching_image",
+                                            "largeIconImage2": "cardio_image",
+                                            }],
+                         "bodyPartsExerciseDesc": "Ab Roller"
+                         },
+                         {
+                         "bodyPartsExerciseTitle": "Lying Leg Raise",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                            "largeIconImage1": "guy-stretching_image",
+                                            "largeIconImage2": "cardio_image",
+                                            }] ,
+                         "bodyPartsExerciseDesc": "Ab Roller"
+                         },
+                         {
+                         "bodyPartsExerciseTitle": "Plank",
+                         "iconImage": "cardio_image",
+                         "largeIconImage" : [{
+                                            "largeIconImage1": "guy-stretching_image",
+                                            "largeIconImage2": "cardio_image",
+                                            }] ,
+                         "bodyPartsExerciseDesc": "Ab Roller"
+                         }
+                         ]
+}
