@@ -23,6 +23,9 @@
 		0714785F1C9960A40098B607 /* BFCWorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714785D1C9960A40098B607 /* BFCWorkoutDetailViewController.swift */; };
 		071478601C9960A40098B607 /* BFCWorkoutDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0714785E1C9960A40098B607 /* BFCWorkoutDetailViewController.xib */; };
 		071478621C999D850098B607 /* BFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071478611C999D850098B607 /* BFCUtility.swift */; };
+		0725E42A1CAD551D007F08D5 /* AEAccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725E4281CAD551D007F08D5 /* AEAccordionTableViewCell.swift */; };
+		0725E42B1CAD551D007F08D5 /* AEAccordionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725E4291CAD551D007F08D5 /* AEAccordionTableViewController.swift */; };
+		0725E42D1CAD5832007F08D5 /* AEXibceptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0725E42C1CAD5832007F08D5 /* AEXibceptionView.swift */; };
 		072EB5311CA018C200CBDEDC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EB5261CA018C200CBDEDC /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		072EB5321CA018C200CBDEDC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EB5281CA018C200CBDEDC /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		072EB5331CA018C200CBDEDC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 072EB52A1CA018C200CBDEDC /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -101,6 +104,9 @@
 		0714785D1C9960A40098B607 /* BFCWorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCWorkoutDetailViewController.swift; sourceTree = "<group>"; };
 		0714785E1C9960A40098B607 /* BFCWorkoutDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BFCWorkoutDetailViewController.xib; sourceTree = "<group>"; };
 		071478611C999D850098B607 /* BFCUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFCUtility.swift; sourceTree = "<group>"; };
+		0725E4281CAD551D007F08D5 /* AEAccordionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAccordionTableViewCell.swift; sourceTree = "<group>"; };
+		0725E4291CAD551D007F08D5 /* AEAccordionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAccordionTableViewController.swift; sourceTree = "<group>"; };
+		0725E42C1CAD5832007F08D5 /* AEXibceptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEXibceptionView.swift; sourceTree = "<group>"; };
 		072EB5251CA018C200CBDEDC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
 		072EB5261CA018C200CBDEDC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
 		072EB5271CA018C200CBDEDC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -338,6 +344,9 @@
 		07648C8D1C94043C0032009F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0725E4281CAD551D007F08D5 /* AEAccordionTableViewCell.swift */,
+				0725E4291CAD551D007F08D5 /* AEAccordionTableViewController.swift */,
+				0725E42C1CAD5832007F08D5 /* AEXibceptionView.swift */,
 				074B6E661C95A7EC007E365C /* BFCBaseViewController.swift */,
 				07648C8E1C9404620032009F /* BFCContainerViewController.swift */,
 				071478611C999D850098B607 /* BFCUtility.swift */,
@@ -504,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0725E42A1CAD551D007F08D5 /* AEAccordionTableViewCell.swift in Sources */,
 				074B6E671C95A7EC007E365C /* BFCBaseViewController.swift in Sources */,
 				8FAD94211C996DB500362302 /* BFCCostumizeWorkoutTableViewCell.swift in Sources */,
 				07FD2CAD1C945DE700F9C87F /* BFCSidePanelTableViewCell.swift in Sources */,
@@ -511,6 +521,8 @@
 				07648C681C94010A0032009F /* BFCCouplesViewController.swift in Sources */,
 				07648C701C9401580032009F /* BFCExerciseDescriptionViewController.swift in Sources */,
 				0712EE581CA9201D00050CF2 /* StrengthBodyParts.swift in Sources */,
+				0725E42B1CAD551D007F08D5 /* AEAccordionTableViewController.swift in Sources */,
+				0725E42D1CAD5832007F08D5 /* AEXibceptionView.swift in Sources */,
 				0712EE4E1CA91CE800050CF2 /* ClientJSONMapper.swift in Sources */,
 				0712EE5A1CA9201D00050CF2 /* ExercisesBodyPartsExercises.swift in Sources */,
 				0712EE571CA9201D00050CF2 /* StrengthBodyParts+CoreDataProperties.swift in Sources */,

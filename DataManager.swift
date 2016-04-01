@@ -10,11 +10,10 @@ import UIKit
 
 class DataManager: NSObject {
 
-    class func strengthBodyParts(completionClouser: (isSuccessful:Bool,error:NSError?) -> Void) {
-        
+    class func strengthBodyParts(completionClouser: (isSuccessful:Bool,error:NSError? , results:[StrengthBodyParts]) -> Void) {
         MockDataManger.mockStrengthBodyParts({ (result) -> Void in
-               let bodyParts = ClientJSONMapper.strengthBodyPartsMapper(result)
-                completionClouser(isSuccessful: true,error: nil)
+             let array = ClientJSONMapper.strengthBodyPartsMapper(result)
+            completionClouser(isSuccessful: true,error: nil , results:array )
             })
     }
     

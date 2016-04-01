@@ -12,20 +12,20 @@ import Foundation
 
 class ClientJSONMapper: NSObject {
     
-    class func strengthBodyPartsMapper(bodyParts:NSMutableDictionary){
-    let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-
-    if !moc.hasChanges{
-    let array = bodyParts["strengthBodyParts1"] as! Array<AnyObject>
+    class func strengthBodyPartsMapper(bodyParts:NSMutableDictionary) -> [StrengthBodyParts]{
+        var strength = [StrengthBodyParts]()
+        let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let array = bodyParts["strengthBodyParts1"] as! Array<AnyObject>
         if let strengthParts = NSEntityDescription.entityForName("StrengthBodyParts", inManagedObjectContext:moc){
           for (_,value) in array.enumerate() {
             let strengthBodyParts = NSManagedObject(entity: strengthParts,
                 insertIntoManagedObjectContext: moc) as! StrengthBodyParts
             strengthBodyParts.bodyName = value.valueForKey("bodyPartsTitle") as? String ?? ""
             strengthBodyParts.bodyImage = value.valueForKey("iconImage") as? String ?? ""
-         }
+            strength.append(strengthBodyParts)
     }
 }
+        return strength
 }
 
     

@@ -14,18 +14,12 @@ class BFCExerciseDetailViewController: BFCBaseViewController {
     
     var bodyPartsArray = [NSManagedObject]()
     
-//    var bodyParts:StrengthBodyParts!{
-//        didSet{
-//            
-//        }
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         BFCUtility.leftArrowNavigationBarButton(self)
         self.tableView.registerNib(UINib(nibName: "BFCExerciseWorkoutDetailTableViewCell", bundle: nil), forCellReuseIdentifier: "ExerciseDetailCell")
         // Do any additional setup after loading the view.
-        getBodyPartsList()
+        fetchBodyPartsList()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,26 +28,29 @@ class BFCExerciseDetailViewController: BFCBaseViewController {
     }
     
     func getBodyPartsList(){
-       DataManager.strengthBodyParts { (isSuccessful, error) -> Void in
+       DataManager.strengthBodyParts{ (isSuccessful, error , bodyPart) -> Void in
         if(isSuccessful){
-          //  self.bodyPartsArray = bodyPart as! [NSManagedObject]
-            self.fetchBodyPartsList()
+             self.bodyPartsArray = bodyPart
         }else{
             print(error)
         }
-        }
+      }
     }
     
     func fetchBodyPartsList(){
         let dataStack = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let fetchRequest = NSFetchRequest(entityName: "StrengthBodyParts")
         
-        let sortDescriptor = NSSortDescriptor(key: "bodyName", ascending: true)
+        let sortDescriptor = NSSortDescriptor(key   : "bodyName", ascending: true)
         fetchRequest.sortDescriptors = [sortDescriptor]
        
         do {
             let results = try dataStack.executeFetchRequest(fetchRequest) as AnyObject
+            if results.count > 0 {
             self.bodyPartsArray = results as! [NSManagedObject]
+            }else{
+              self.getBodyPartsList()
+            }
         } catch {
             print("Error fetching data")
         }
@@ -74,7 +71,6 @@ extension BFCExerciseDetailViewController: UITableViewDataSource , UITableViewDe
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCellWithIdentifier("ExerciseDetailCell" , forIndexPath: indexPath) as! BFCExerciseWorkoutDetailTableViewCell
             
-//            cell.exerciseDetailLabel.text = bodyPartsArray[indexPath.row] as? String
             let bodyParts = bodyPartsArray[indexPath.row] as! StrengthBodyParts
             cell.bodyParts = bodyParts
             
