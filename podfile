@@ -1,0 +1,14 @@
+
+platform :ios, “8.0”
+use_frameworks!
+
+target 'BFC' do
+pod 'Alamofire', '2.0.2'
+pod ‘MBProgressHUD’
+pod ’Reachability’
+
+end
+ 
+target ‘BFCTests’ do
+ 
+end
